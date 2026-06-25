@@ -1,0 +1,23 @@
+{
+  "$comment": "Super Rick Standards — the version registry. Each product that wears the Super Rick identity pins the standards version it implements. To answer 'which Super Rick Standards is product X on?', read this file. Bump a product's pinned_standards_version when it adopts a newer standard.",
+  "schema_version": 1,
+  "standards_version": "1.0.0",
+  "products": [
+    {
+      "id": "super-rick-presence",
+      "surface": "The Presence orb — voice-first cinematic UI",
+      "repo": "marvelousempire/super-rick-presence",
+      "role": "reference-implementation",
+      "pinned_standards_version": "1.0.0",
+      "notes": "The canonical orb; this standard is extracted from its live code."
+    },
+    {
+      "id": "voice-stack",
+      "surface": "Voice stack documentation + status + smoke receipts",
+      "repo": "marvelousempire/voice-stack",
+      "role": "consumer",
+      "pinned_standards_version": "1.0.0",
+      "notes": "References this standard from interfaces/orb instead of embedding a copy."
+    }
+  ]
+}
