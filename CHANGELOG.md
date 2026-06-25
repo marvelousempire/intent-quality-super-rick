@@ -2,6 +2,18 @@
 
 All notable changes to the Super Rick Standards. Semver on the standards (see `README.md`).
 
+## [1.1.0] — Thursday, June 25, 2026 Eastern · *Orb advances: emotion settle, tap-to-talk, DEV MODE*
+
+### Added
+- `standards/orb-design-system.md` → **v1.1 additions (binding)**: emotion now **settles** (color
+  lerps, amber↔blue swing, emotion-driven brightness) instead of snapping; a breathing **tap-to-talk**
+  affordance; and **DEV MODE** (live response timer + STT/Turn timings + scrolling interaction/error
+  log + smart ⚑ Report button). Extracted from the shipped `super-rick-presence` work.
+
+### Changed
+- `products/products.json` — `standards_version` → `1.1.0`; `super-rick-presence` and `voice-stack`
+  re-pinned to `1.1.0` (they implement the v1.1 orb).
+
 ## [1.0.0] — Thursday, June 25, 2026 at 1:56 PM Eastern · *Seed the canonical Super Rick Standard*
 
 ### Added

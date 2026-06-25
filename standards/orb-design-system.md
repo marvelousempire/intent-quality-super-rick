@@ -160,3 +160,32 @@ A "skin" is a JSON/CSS-vars file that sets those six; the state machine, shaders
 | Settings panel + switchers | `components/UIOverlay/index.tsx` |
 
 When the orb UI changes, update this standard in the same pass and bump `VERSION` if the change is binding.
+
+---
+
+## v1.1 additions (binding)
+
+Part of the Super Rick orb standard as of **v1.1.0**:
+
+### Emotion settles — never snaps
+The orb's core/rim color **lerps** toward the emotion target (~0.045/frame) so it
+*settles into* a feeling instead of flipping. Warmth drives a real **amber↔blue swing**,
+and emotion drives a real **brightness range** (calm = dim & cool → excited = bright &
+warm). Source: `components/PresenceOrb/PresenceOrb.tsx`. DON'T set emotion color
+directly per-frame (snapping is off-brand).
+
+### Tap-to-talk affordance
+When idle with no transcript, a breathing **"tap to talk"** prompt (uppercase, dim,
+3.6s breathe, bottom 22%) signals the orb is tappable — the tap surface is otherwise
+invisible. Hidden during a turn; honors reduced-motion. Source: `.presence-root__prompt`
+in `app/globals.css`.
+
+### DEV MODE (developer surface)
+Hidden in **Settings → Developer → Dev mode**. A glass panel (bottom-left) with:
+a **live response timer** ("since you spoke" / "responding…"), **STT** + **Turn** phase
+timings + cache hit/fresh, a **scrolling interaction+error log** (timestamped,
+color-coded), and a **⚑ Report now** button that anchors on the last error (else the
+current interaction) and captures the log window → copies + downloads JSON + best-effort
+POST to a debug sink. Source: `lib/dev-log.ts`, `components/DevPanel/`, instrumented
+`lib/use-presence-turn-cycle.ts`. DEV MODE stays **off by default** and **never** alters
+the calm, orb-first idle UX.
