@@ -1,6 +1,12 @@
-# Changelog — standards-super-rick
+# Changelog — intent-quality-super-rick
 
 All notable changes to the Super Rick Standards. Semver on the standards (see `README.md`).
+(Repo renamed from `standards-super-rick` → `intent-quality-super-rick`; the consumer hub repo
+`voice-stack` was renamed → `standard-voice-stack`. The standard version line is unchanged.)
+
+> **Rename note (no version bump):** repo references updated to the new names — this repo
+> `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
+> `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
 ## [1.1.0] — Thursday, June 25, 2026 Eastern · *Orb advances: emotion settle, tap-to-talk, DEV MODE*
 

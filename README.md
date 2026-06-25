@@ -1,4 +1,4 @@
-# standards-super-rick
+# intent-quality-super-rick
 
 **The canonical Super Rick Standards** — the voice-first cinematic design language every
 Family Office product that wears the Super Rick identity must follow, **version-tracked** so each
@@ -9,12 +9,12 @@ product pins an exact standards release.
 > | Field | Declaration |
 > |-------|-------------|
 > | **Why** | The operator wants every product we build to share one versioned Super Rick design language, so the look/feel/behavior is consistent and each product can pin exactly which standards release it implements. |
-> | **Problem** | The Super Rick Standards (the orb design system) lived embedded inside `voice-stack/interfaces/orb`, with no version, no per-product registry, and a copy starting to diverge on GitHub vs Gitea. There was no single source of truth and no way to say "product X is on Super Rick Standards v1.0.0." |
+> | **Problem** | The Super Rick Standards (the orb design system) lived embedded inside `standard-voice-stack/interfaces/orb`, with no version, no per-product registry, and a copy starting to diverge on GitHub vs Gitea. There was no single source of truth and no way to say "product X is on Super Rick Standards v1.0.0." |
 > | **Accomplish** | One standards-only repo (separate from the orb *implementation* in `super-rick-presence`), carrying the canonical design system + a `products/products.json` registry mapping each product → its pinned standards version, mirrored Gitea (primary) → GitHub (insurance). |
 > | **Tags** | `super-rick-standards` · `design-system` · `voice-first` · `version-tracking` · `declaration-of-intent` |
 > | **Intent ID** | `INT-0021` `#super-rick-standards` → nephew `data/intent-ledger.json` |
 
-This is the first of the **`standards-*`** repo family — one versioned standards repo per identity/product line.
+This is the **Super Rick intent + quality home** — the canonical versioned standards for the Super Rick identity. (Renamed from `standards-super-rick`; carries the design-language standard plus the per-product version registry.)
 
 ---
 
@@ -24,7 +24,7 @@ This is the first of the **`standards-*`** repo family — one versioned standar
 |---|---|
 | **Standards** (here) | The *rules* — design system, tokens, emotion palette, DOs/DON'Ts, skinning levers, the per-product version registry. **No application code.** |
 | **Implementation** | The orb *code* lives in [`super-rick-presence`](https://git.jailynmarvin.com/marvelousempire/super-rick-presence) (the Presence orb) — that repo stays orb-code-only. |
-| **Documentation** | Voice-stack status, understandings, and smoke receipts live in [`voice-stack`](https://git.jailynmarvin.com/marvelousempire/voice-stack). |
+| **Documentation** | Voice stack status, understandings, and smoke receipts live in [`standard-voice-stack`](https://git.jailynmarvin.com/marvelousempire/standard-voice-stack). |
 
 ## Layout
 
@@ -57,9 +57,9 @@ Bump `VERSION` + add a `CHANGELOG.md` entry in the same change.
 
 | Surface | URL |
 |---------|-----|
-| **Gitea (primary)** | https://git.jailynmarvin.com/marvelousempire/standards-super-rick |
-| **Clone (SSH)** | `ssh://git@10.1.0.5:2424/marvelousempire/standards-super-rick.git` |
-| **GitHub (private mirror)** | `git@github.com:marvelousempire/standards-super-rick.git` — offsite insurance only |
+| **Gitea (primary)** | https://git.jailynmarvin.com/marvelousempire/intent-quality-super-rick |
+| **Clone (SSH)** | `ssh://git@10.1.0.5:2424/marvelousempire/intent-quality-super-rick.git` |
+| **GitHub (private mirror)** | `git@github.com:marvelousempire/intent-quality-super-rick.git` — offsite insurance only |
 
 Mirror is **Gitea → GitHub push-mirror** (Gitea is canonical; agents never auto-push GitHub).
 Per nephew rule `new-repo-gitea-github-mirror`.
@@ -67,5 +67,5 @@ Per nephew rule `new-repo-gitea-github-mirror`.
 ## Related
 
 - [`super-rick-presence`](https://git.jailynmarvin.com/marvelousempire/super-rick-presence) — the orb implementation (the reference product).
-- [`voice-stack`](https://git.jailynmarvin.com/marvelousempire/voice-stack) — voice docs + status + receipts.
+- [`standard-voice-stack`](https://git.jailynmarvin.com/marvelousempire/standard-voice-stack) — voice docs + status + receipts.
 - Runtime code: [`marvelousempire/nephew`](https://git.jailynmarvin.com/marvelousempire/nephew) (`apps/super-rick-presence`, `src/voice/`).
