@@ -1,0 +1,47 @@
+# Gitea Verify — intent-quality-super-rick standards registry gate
+
+name: Verify
+
+on:
+  push:
+    branches: [main, "docs/**", "feat/**"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  nephew-verify:
+    name: nephew-verify ship gate
+    runs-on: nephew-spark
+    timeout-minutes: 10
+    steps:
+      - name: Checkout (git)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd "${GITHUB_WORKSPACE}"
+          git config --global --add safe.directory "${GITHUB_WORKSPACE}"
+          git config --global http.lowSpeedLimit 1000
+          git config --global http.lowSpeedTime 60
+          export GIT_TERMINAL_PROMPT=0
+          if [ -z "${GITHUB_TOKEN:-}" ]; then echo "::error::GITHUB_TOKEN is empty"; exit 1; fi
+          AUTHED="$(printf '%s' "${GITHUB_SERVER_URL}" | sed -E "s#^(https?)://#\\1://oauth2:${GITHUB_TOKEN}@#")/${GITHUB_REPOSITORY}.git"
+          if ! git rev-parse HEAD >/dev/null 2>&1; then
+            git init .
+            git remote add origin "${AUTHED}"
+          fi
+          ok=0
+          for attempt in 1 2 3; do
+            if timeout 180 git fetch --depth=1 origin "${GITHUB_SHA}"; then ok=1; break; fi
+            sleep 5
+          done
+          [ "$ok" = "1" ] || exit 1
+          git checkout -f FETCH_HEAD
+
+      - name: standards registry gate
+        run: |
+          set -euo pipefail
+          cd "${GITHUB_WORKSPACE}"
+          test -f products/products.json
+          test -f VERSION
+          node -e "const j=require('./products/products.json'); if(!j.products?.length) process.exit(1)"
