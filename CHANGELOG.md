@@ -8,6 +8,14 @@ All notable changes to the Super Rick Standards. Semver on the standards (see `R
 > `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
 > `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
+## [1.1.1] — Tuesday, June 30, 2026 at 3:45 PM Eastern · *Voice fleet cassette truth*
+
+### Added
+- `standards/voice-fleet-cassette-truth.md` — doctor + speech smoke law; NeuTTS arm64 ONNX doctrine (`ref_codes`, `make smoke-neutts-air`).
+
+### Changed
+- `products/products.json` — `standards_version` → `1.1.1`; `standard-voice-stack` notes cite NeuTTS `:8096` live.
+
 ## [1.1.0] — Thursday, June 25, 2026 Eastern · *Orb advances: emotion settle, tap-to-talk, DEV MODE*
 
 ### Added

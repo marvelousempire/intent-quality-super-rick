@@ -1,7 +1,7 @@
 {
   "$comment": "Super Rick Standards — the version registry. Each product that wears the Super Rick identity pins the standards version it implements. To answer 'which Super Rick Standards is product X on?', read this file. Bump a product's pinned_standards_version when it adopts a newer standard.",
   "schema_version": 1,
-  "standards_version": "1.1.0",
+  "standards_version": "1.1.1",
   "products": [
     {
       "id": "super-rick-presence",
@@ -17,7 +17,7 @@
       "repo": "marvelousempire/standard-voice-stack",
       "role": "consumer",
       "pinned_standards_version": "1.1.0",
-      "notes": "References this standard from interfaces/orb instead of embedding a copy. (Renamed from voice-stack.)"
+      "notes": "References this standard from interfaces/orb. Pinned v1.1.1 — voice-fleet-cassette-truth (NeuTTS :8096 live Jun 30)."
     }
   ]
 }
