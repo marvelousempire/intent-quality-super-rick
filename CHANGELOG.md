@@ -8,6 +8,25 @@ All notable changes to the Super Rick Standards. Semver on the standards (see `R
 > `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
 > `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
+## [1.2.0] — Friday, July 3, 2026 at 1:11:40 PM Eastern · *The Super Rick Way + the stationery*
+
+### Added
+- `THE-SUPER-RICK-WAY.md` — the philosophy: psychology, the seven disciplines, the Super Rick
+  gate, and the full-multimedia scope table (voice, text chat, retrieval, vision, image, sound,
+  quantization).
+- `standards/templates/` — **the stationery**: 17 fill-in templates extracted from the
+  `standard-voice-stack/understandings/` prototype corpus, so every new system (chat, vision,
+  image, sound, …) is charted the Super Rick way. Core chain: `declaration-of-intent` →
+  `comp` → `why-guide` → `gap-analysis` → `bridge-plan` → `ledger`; supporting types: `audit`,
+  `architecture`, `inventory-undressing`, `setup-specs`, `model-ranking`, `benchmark`,
+  `incident`, `cross-product-patterns`, `understandings-readme`; shared blocks in `_chrome.md`;
+  index + charting order + filename law in `standards/templates/README.md`. Every field carries
+  a ✍️ fill instruction.
+
+### Changed
+- `README.md` — Layout table now lists the philosophy doc and the stationery.
+- `products/products.json` — `standards_version` → `1.2.0`.
+
 ## [1.1.1] — Tuesday, June 30, 2026 at 3:45 PM Eastern · *Voice fleet cassette truth*
 
 ### Added

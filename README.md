@@ -31,7 +31,9 @@ This is the **Super Rick intent + quality home** — the canonical versioned sta
 | Path | Purpose |
 |------|---------|
 | `VERSION` | The current Super Rick Standards semver (the number products pin to). |
+| `THE-SUPER-RICK-WAY.md` | **The philosophy** — psychology, the seven disciplines, the Super Rick gate. Read before building anything that wears the identity. |
 | `standards/orb-design-system.md` | **Canonical** — the complete orb design system (principles, tokens, emotion palette, state machine, DOs/DON'Ts, skinning). Extracted from the live `super-rick-presence` code. |
+| `standards/templates/` | **The stationery** — fill-in templates for every understanding doc type (Why Guide, COMP, GAP, Bridge, Ledger, audits, benchmarks, incidents, …), extracted from the `standard-voice-stack/understandings` prototype. Start at `standards/templates/README.md`. |
 | `products/products.json` | The **version registry** — every product that wears Super Rick + the standards version it pins. |
 | `products/README.md` | How a product adopts / bumps its pinned standards version. |
 | `CHANGELOG.md` | What changed per standards release. |

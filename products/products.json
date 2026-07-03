@@ -1,7 +1,7 @@
 {
   "$comment": "Super Rick Standards — the version registry. Each product that wears the Super Rick identity pins the standards version it implements. To answer 'which Super Rick Standards is product X on?', read this file. Bump a product's pinned_standards_version when it adopts a newer standard.",
   "schema_version": 1,
-  "standards_version": "1.1.1",
+  "standards_version": "1.2.0",
   "products": [
     {
       "id": "super-rick-presence",
