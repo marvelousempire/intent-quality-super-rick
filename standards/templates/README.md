@@ -1,5 +1,7 @@
 # The Super Rick Stationery — understanding-doc templates
 
+> **Canonical path moved:** [`schema-library/super-rick/templates/`](../../schema-library/super-rick/templates/) in this repo (Schema Library `super-rick` domain). This folder remains for backward links; **agents and new work use the schema-library path.**
+
 > The fill-in forms for **the Super Rick way** of documenting any build — chat, voice, vision,
 > image, sound, retrieval, anything. Extracted 2026-07-03 from the prototype corpus at
 > [`standard-voice-stack/understandings/`](https://git.jailynmarvin.com/marvelousempire/standard-voice-stack/src/branch/main/understandings)

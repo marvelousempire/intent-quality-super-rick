@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "Maps Super Rick product domains to yousirjuan public-safe handbook mirror paths. Author in hub repo first; mirror to YSJ setup chapters.",
+  "domains": {
+    "voice": {
+      "repo_hub": "standard-voice-stack",
+      "hub_undressing": "understandings/FULL-STACK-UNDRESSING.md",
+      "setup_chapter": "docs/setup/30-voice-stack-full-undressing.md",
+      "inference_chapter": "docs/setup/31-m5-max-dgx-inference-setup.md",
+      "hub_inference": "understandings/M5-MAX-DGX-INFERENCE-SETUP.md",
+      "ai_skill": "ai-skills/tts-and-speech-systems.md",
+      "related_setup_chapters": [
+        "docs/setup/11-voice-parakeet-premium-stack.md",
+        "docs/setup/28-voice-containers-whisper-fish-speech.md"
+      ]
+    }
+  }
+}

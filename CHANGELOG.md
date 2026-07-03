@@ -8,6 +8,21 @@ All notable changes to the Super Rick Standards. Semver on the standards (see `R
 > `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
 > `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
+## [1.3.0] — Friday, July 3, 2026 at 1:45:00 PM Eastern · *Schema Library super-rick domain*
+
+### Added
+- **`schema-library/super-rick/`** — canonical Schema Library domain for Super Rick: `doctrine.md`,
+  thirteen `templates/`, `schemas/super-rick-understanding.doc.schema.json`, YSJ mirror
+  `registry/ysj-mirror.registry.json`, and `scripts/` (scaffold + audit).
+- **`schema-library/README.md`** — how this repo fits the umbrella `marvelousempire/schema-library`
+  sub-repo layout.
+
+### Changed
+- `standards/templates/README.md` — points agents to `schema-library/super-rick/templates/`.
+- Root `README.md` — layout table lists `schema-library/super-rick/` as the agent entry.
+
+> **Verify:** `node schema-library/super-rick/scripts/scaffold-super-rick-understanding.mjs --check`
+
 ## [1.2.0] — Friday, July 3, 2026 at 1:11:40 PM Eastern · *The Super Rick Way + the stationery*
 
 ### Added

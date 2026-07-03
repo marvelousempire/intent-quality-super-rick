@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://averygoodman.family/schemas/super-rick-understanding.doc.schema.json",
+  "title": "Super Rick Understanding document",
+  "description": "Metadata contract for understandings/ docs in a Super Rick product hub (voice, video, chat, vision). Prototype: standard-voice-stack/understandings/Super-Rick-Why-Guide.md.",
+  "type": "object",
+  "required": ["kind", "slug", "title", "domain", "repoHub"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "type": "string",
+      "enum": [
+        "why-guide",
+        "comp",
+        "ledger",
+        "gap-analysis",
+        "bridge-plan",
+        "repo-inventory",
+        "architecture-l3",
+        "cross-product-patterns",
+        "full-stack-undressing",
+        "fleet-audit",
+        "incident-gap",
+        "numbered-understanding",
+        "platform-handbook-mirror"
+      ],
+      "description": "Stationary form type — maps to schema-library/super-rick/templates/<kind>.template.md"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "kebab-case product slug, e.g. super-rick-voice, super-rick-chat"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 4,
+      "description": "Human product name, e.g. Super Rick Voice Agent"
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["voice", "video", "chat", "vision", "presence", "other"],
+      "description": "Modality lane — drives filename prefix and Pockit cassette id hints"
+    },
+    "repoHub": {
+      "type": "string",
+      "description": "Canonical git repo id for understandings/, e.g. standard-voice-stack"
+    },
+    "compVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "COMP north-star doc version (not Pockit semver)"
+    },
+    "ledgerId": {
+      "type": "string",
+      "pattern": "^INT-[0-9]{4}$"
+    },
+    "hashtag": {
+      "type": "string",
+      "pattern": "^#[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "pockitCassetteId": {
+      "type": "string",
+      "description": "Pockit route cassette id, e.g. voice, video, chat"
+    },
+    "doorUrl": {
+      "type": "string",
+      "pattern": "^http://[a-z0-9.-]+\\.localhost/",
+      "description": "Operator door — RL-DOOR-URL-001"
+    },
+    "designStandardsRepo": {
+      "type": "string",
+      "const": "intent-quality-super-rick",
+      "description": "Super Rick intent chrome + orb aesthetic registry"
+    },
+    "companionDocs": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "description": "Relative paths to sibling understanding docs in the same hub"
+    },
+    "stalenessPointers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Docs that supersede stale claims in this file when facts drift"
+    }
+  }
+}
