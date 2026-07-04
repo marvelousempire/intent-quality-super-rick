@@ -8,6 +8,17 @@ All notable changes to the Super Rick Standards. Semver on the standards (see `R
 > `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
 > `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
+## [1.5.0] — Saturday, July 4, 2026 at 9:17:54 AM Eastern · *Full-stack-undressing forces the low-level specs — quant · chunking · embed schema · memory tiers*
+
+### Added
+- **Four new sections in `full-stack-undressing.template.md`** so a stack undressing can no longer look complete while omitting the numbers that actually define it (operator: *"the indexing and chunking… the quantization… all those specificities need to be noted"*):
+  - **§5 Quantization matrix** — every model × engine × hardware × format, with a "measured not asserted" `weigh-and-measure` note (universal; Mac GGUF · DGX FP8/AWQ · sidecar FP16).
+  - **§6 Chunking & indexing** — chunker strategy, size, overlap, stride, snap, indexer, reindex trigger (retrieval stacks; else explicit `N/A — no corpus`).
+  - **§7 Embedding & retrieval schema** — embedder + dimensionality + precision, reranker, vector store, collections, payload fields, retrieve path.
+  - **§8 Memory tiers** — short-term / durable / retrieval, each with its store + lifecycle (stateful stacks; else explicit `N/A — stateless`).
+- Covenant flags → §9, Platform handbook mirror → §10 (renumbered). No stationery-kind count change — these sharpen an existing kind.
+- **Why:** the template pinned hardware/ports/models but had no field forcing chunk size, quant level, index schema, or memory tier — so `standard-rag-stack` / `standard-memory-stack` could ship prose without the real spec. First consumer: the `standard-rag-stack` FULL-STACK-UNDRESSING (bge-m3 1024-dim FP16 · sliding-window 3200/800 chunker · Qdrant Brain A/B · Redis STM tiers).
+
 ## [1.4.0] — Friday, July 3, 2026 at 8:47:16 PM Eastern · *Schema-library stationery complete — 7 new kinds + shared chrome*
 
 ### Added
