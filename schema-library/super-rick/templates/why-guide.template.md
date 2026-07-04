@@ -1,4 +1,4 @@
-# Super Rick {{DOMAIN_TITLE}} — The Why Guide (Nuclear Level 3)
+# Super Rick {{DOMAIN_TITLE}} — The Why Guide ({{VERSION_NUMBER}})
 
 > ⚠️ **{{STALENESS_DATE}} de-stale ({{LEDGER_ID}}):** {{STALENESS_SUMMARY}} — superseded by [`{{RANKING_DOC}}`](./{{RANKING_DOC}}).
 
