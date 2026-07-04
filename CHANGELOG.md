@@ -1,5 +1,14 @@
 # Changelog — intent-quality-super-rick
 
+## [1.6.0] — 2026-07-04 · Super Rick Speed Contract (all five modalities)
+
+- **Super-Rick-Speed-Contract.md** — the speed+efficiency half of THE-SUPER-RICK-WAY: the always-warm
+  fast-draft + heavy-escalation + fallback + watchdog + /health pattern (proven in voice at 206ms),
+  generalized to chat, visual, video, and vision — each tuned to its physics. Honest maturity table:
+  voice+chat 🟢 done, video 🟡 has the machinery, visual+vision 🔴 the gap this opens. Each stack gets
+  the contract in its own repo (individually-then-fused). IDEA-0006.
+
+
 All notable changes to the Super Rick Standards. Semver on the standards (see `README.md`).
 (Repo renamed from `standards-super-rick` → `intent-quality-super-rick`; the consumer hub repo
 `voice-stack` was renamed → `standard-voice-stack`. The standard version line is unchanged.)
