@@ -51,6 +51,7 @@ const KIND_TO_TEMPLATE = {
 };
 
 const KIND_TO_OUTPUT = {
+  'family-explainer': '{{DOMAIN_TITLE}}-Family-Explainer.md',
   'declaration-of-intent': 'Super-Rick-{{DOMAIN_TITLE}}-Declaration-of-Intent.md',
   comp: 'PRIVATE {{DOMAIN_UPPER}}-FIRST AI SYSTEM — COMP.md',
   'why-guide': 'Super-Rick-{{DOMAIN_TITLE}}-Why-Guide.md',
