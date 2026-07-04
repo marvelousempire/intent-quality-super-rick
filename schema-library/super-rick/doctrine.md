@@ -2,7 +2,7 @@
 
 **Prototype repo:** [`standard-voice-stack`](https://git.jailynmarvin.com/marvelousempire/standard-voice-stack) → `understandings/`  
 **Reference WHY guide:** [`Super-Rick-Why-Guide.md`](../../Nephew/Understandings/Voice/understandings/Super-Rick-Why-Guide.md)  
-**Intent law:** [`declaration-of-intent-model.md`](../standards/declaration-of-intent-model.md) (OR-046) · [`intent-quality-super-rick`](https://git.jailynmarvin.com/marvelousempire/intent-quality-super-rick)  
+**Intent law:** [`declaration-of-intent-model.md`](https://git.jailynmarvin.com/marvelousempire/nephew/src/branch/main/docs/standards/declaration-of-intent-model.md) (OR-046) · [`intent-quality-super-rick`](https://git.jailynmarvin.com/marvelousempire/intent-quality-super-rick)  
 **Machine schema:** [`super-rick-understanding.doc.schema.json`](schemas/super-rick-understanding.doc.schema.json)
 
 When the board says **Super Rick way**, **intent quality**, or **understandings folder**, they mean this bundle: the same *forms* voice used in 2026, filled out for **chat**, **vision**, **presence**, or the next modality — not a one-off doc style per product.
@@ -74,6 +74,8 @@ Add `full-stack-undressing` when the stack has live ports/models; add `architect
 **Fill:** One sentence symptom + link to ranking/audit doc. Required when COMP claims drift from live probes.
 
 ### Declaration of Intent shield (required on primary docs)
+
+**Template:** [`templates/declaration-of-intent.template.md`](templates/declaration-of-intent.template.md) — kind `declaration-of-intent`, the first move of the core chain.
 
 ```markdown
 > ## 🛡 DECLARATION OF INTENT 🎗 · `INT-NNNN` `#hashtag`
@@ -323,5 +325,5 @@ node scripts/audit-super-rick-ysj-mirror.mjs --domain voice
 ## Related
 
 - [`prototype-blueprint-trinity.md`](../pockit/Prototype-Blueprint-Trinity.md) — HCC + door + WordPress per product
-- [`declaration-of-intent-model.md`](../standards/declaration-of-intent-model.md) — shield + engineeringWhyGuide columns
+- [`declaration-of-intent-model.md`](https://git.jailynmarvin.com/marvelousempire/nephew/src/branch/main/docs/standards/declaration-of-intent-model.md) — shield + engineeringWhyGuide columns
 - Voice hub README: [`Nephew/Understandings/Voice/README.md`](../../Nephew/Understandings/Voice/README.md)

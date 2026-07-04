@@ -8,6 +8,26 @@ All notable changes to the Super Rick Standards. Semver on the standards (see `R
 > `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
 > `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
+## [1.3.1] — Friday, July 3, 2026 at 8:38:10 PM Eastern · *Declaration of Intent template lands in the schema-library domain*
+
+### Fixed
+- **`schema-library/super-rick/templates/declaration-of-intent.template.md`** — the core chain's
+  step 1 (the 🛡 shield, "required on primary docs" per `doctrine.md`) existed in
+  `standards/templates/` but was missing from the canonical `schema-library/super-rick/templates/`
+  domain shipped in 1.3.0. Added as kind `declaration-of-intent`: schema enum row, scaffold
+  `KIND_TO_TEMPLATE`/`KIND_TO_OUTPUT` wiring, and first slot in the `--bundle` chain (now 7 docs).
+- `schema-library/super-rick/templates/README.md` — broken doctrine link
+  (`../../super-rick-understandings.md` → `../doctrine.md`), broken YSJ registry path
+  (`data/super-rick-ysj-mirror.registry.json` → `../registry/ysj-mirror.registry.json`), and the
+  new `declaration-of-intent` row at the top of the kind table.
+- `schema-library/super-rick/doctrine.md` — two dead `../standards/declaration-of-intent-model.md`
+  links now point at the nephew canonical
+  (`marvelousempire/nephew` → `docs/standards/declaration-of-intent-model.md`); shield section
+  names its template.
+
+> **Verify:** `node schema-library/super-rick/scripts/scaffold-super-rick-understanding.mjs --check`
+> (14 kinds) + single-kind scaffold smoke.
+
 ## [1.3.0] — Friday, July 3, 2026 at 1:45:00 PM Eastern · *Schema Library super-rick domain*
 
 ### Added

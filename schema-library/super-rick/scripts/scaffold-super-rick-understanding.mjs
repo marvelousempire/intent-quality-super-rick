@@ -16,6 +16,7 @@ const SCHEMA_PATH = path.join(SCHEMA_ROOT, 'schemas/super-rick-understanding.doc
 const YSJ_REGISTRY_PATH = path.join(SCHEMA_ROOT, 'registry/ysj-mirror.registry.json');
 
 const BUNDLE_KINDS = [
+  'declaration-of-intent',
   'comp',
   'why-guide',
   'ledger',
@@ -25,6 +26,7 @@ const BUNDLE_KINDS = [
 ];
 
 const KIND_TO_TEMPLATE = {
+  'declaration-of-intent': 'declaration-of-intent.template.md',
   'why-guide': 'why-guide.template.md',
   comp: 'comp.template.md',
   ledger: 'ledger.template.md',
@@ -41,6 +43,7 @@ const KIND_TO_TEMPLATE = {
 };
 
 const KIND_TO_OUTPUT = {
+  'declaration-of-intent': 'Super-Rick-{{DOMAIN_TITLE}}-Declaration-of-Intent.md',
   comp: 'PRIVATE {{DOMAIN_UPPER}}-FIRST AI SYSTEM — COMP.md',
   'why-guide': 'Super-Rick-{{DOMAIN_TITLE}}-Why-Guide.md',
   ledger: 'Super-Rick-{{DOMAIN_TITLE}}-Stack-Ledger.md',
@@ -72,7 +75,7 @@ Required context (bundle or single):
 
 Optional:
   --kind <kind>                      Single form only (default: bundle)
-  --bundle                           Write minimum 6-doc bundle
+  --bundle                           Write minimum 7-doc bundle (declaration-of-intent first)
   --comp-version 1.0.0
   --ledger-id INT-0000
   --hashtag #super-rick-chat
