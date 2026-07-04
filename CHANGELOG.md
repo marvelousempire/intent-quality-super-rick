@@ -8,6 +8,34 @@ All notable changes to the Super Rick Standards. Semver on the standards (see `R
 > `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
 > `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
+## [1.4.0] — Friday, July 3, 2026 at 8:47:16 PM Eastern · *Schema-library stationery complete — 7 new kinds + shared chrome*
+
+### Added
+- **Seven stationery kinds** ported from `standards/templates/` into the canonical
+  `schema-library/super-rick/templates/` domain, closing the gap between the 1.2.0 stationery
+  and the 1.3.0 schema-library domain (every untemplated doc type in the
+  `standard-voice-stack/understandings/` prototype corpus now has a kind):
+  `audit` (living subsystem — distinct from dated `fleet-audit`), `architecture` (component
+  internals — distinct from `architecture-l3`), `benchmark`, `model-ranking`, `setup-specs`,
+  `incident` (postmortem + rule — distinct from `incident-gap`), `understandings-readme`.
+- **`templates/_chrome.md`** — the shared blocks (shield, stamps, de-stale banners, glyph legend,
+  LED bars, Law callouts, Grade mixin, Boss Moves, Verify, Related) — copy-in, not a kind.
+- Schema `kind` enum + scaffold `KIND_TO_TEMPLATE`/`KIND_TO_OUTPUT` rows for all seven
+  (21 kinds total); new `BENCHMARK_TOPIC` context key.
+
+### Fixed
+- `RANKING_DOC` context now year-stamped (`{{DOMAIN_TITLE}}-Model-Ranking-{{YEAR}}.md`) per the
+  filename law — matches the `model-ranking` kind output and the `Voice-Model-Ranking-2026.md`
+  prototype (was date-stamped).
+
+### Not ported (deliberate)
+- `standards/templates/inventory-undressing.template.md` — already covered by the existing
+  `repo-inventory` + `full-stack-undressing` pair.
+
+> **Verify:** `node schema-library/super-rick/scripts/scaffold-super-rick-understanding.mjs --check`
+> (21 kinds) + kind smokes (`model-ranking` → `Chat-Model-Ranking-2026.md`, `benchmark` →
+> `VOICE-BENCHMARK-<date>.md`, `understandings-readme` → `README.md`).
+
 ## [1.3.1] — Friday, July 3, 2026 at 8:38:10 PM Eastern · *Declaration of Intent template lands in the schema-library domain*
 
 ### Fixed

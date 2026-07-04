@@ -40,6 +40,13 @@ const KIND_TO_TEMPLATE = {
   'incident-gap': 'incident-gap.template.md',
   'numbered-understanding': 'numbered-understanding.template.md',
   'platform-handbook-mirror': 'platform-handbook-mirror.template.md',
+  audit: 'audit.template.md',
+  architecture: 'architecture.template.md',
+  benchmark: 'benchmark.template.md',
+  'model-ranking': 'model-ranking.template.md',
+  'setup-specs': 'setup-specs.template.md',
+  incident: 'incident.template.md',
+  'understandings-readme': 'understandings-readme.template.md',
 };
 
 const KIND_TO_OUTPUT = {
@@ -57,6 +64,13 @@ const KIND_TO_OUTPUT = {
   'incident-gap': '{{INCIDENT_SLUG}}-{{INCIDENT_DATE}}.md',
   'numbered-understanding': '{{NUMBER}}-{{SLUG}}.md',
   'platform-handbook-mirror': '{{YSJ_SETUP_CHAPTER_BASENAME}}.md',
+  audit: '{{SUBSYSTEM_NAME}}-AUDIT.md',
+  architecture: '{{SUBSYSTEM_NAME}}-ARCHITECTURE.md',
+  benchmark: '{{BENCHMARK_TOPIC}}-BENCHMARK-{{AUDIT_DATE}}.md',
+  'model-ranking': '{{DOMAIN_TITLE}}-Model-Ranking-{{YEAR}}.md',
+  'setup-specs': '{{DOMAIN_TITLE}}-Setup-Specs.md',
+  incident: '{{INCIDENT_SLUG}}-Postmortem-{{INCIDENT_DATE}}.md',
+  'understandings-readme': 'README.md',
 };
 
 function usage() {
@@ -196,7 +210,8 @@ function buildContext(opts) {
     AUDIT_DATE: auditDateSlug(),
     STALENESS_DATE: auditDateSlug(),
     INCIDENT_DATE: auditDateSlug(),
-    RANKING_DOC: `${domainTitle}-Model-Ranking-${auditDateSlug()}.md`,
+    RANKING_DOC: `${domainTitle}-Model-Ranking-${new Date().getFullYear()}.md`,
+    BENCHMARK_TOPIC: domainUpperVal,
     EMOJI: domain === 'voice' ? '🎙' : domain === 'video' ? '🎬' : domain === 'chat' ? '💬' : '✨',
     CONFIG_PATH: `data/${domain}-config.json`,
     PRIMARY_API: `POST /api/v1/${domain}/turn`,

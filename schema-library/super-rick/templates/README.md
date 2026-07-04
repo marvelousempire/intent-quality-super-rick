@@ -20,6 +20,13 @@ Stationary forms extracted from [`standard-voice-stack/understandings/`](https:/
 | `incident-gap.template.md` | `incident-gap` | `Ready-Play-DGX-Inference-Gap-2026-06-30.md` |
 | `numbered-understanding.template.md` | `numbered-understanding` | MakeDoors `0001-*.md` |
 | `platform-handbook-mirror.template.md` | `platform-handbook-mirror` | `yousirjuan/docs/setup/30-voice-stack-full-undressing.md` |
+| `audit.template.md` | `audit` | `CACHE-RAG-REDIS-NAS-STACK-AUDIT.md` (living subsystem audit — `fleet-audit` is the dated fleet-wide flavor) |
+| `architecture.template.md` | `architecture` | `PIPECAT-FRAMEPROCESSOR-ARCHITECTURE.md` (component internals — `architecture-l3` is the ambition-level variant) |
+| `benchmark.template.md` | `benchmark` | `DAILY-DRIVER-MODEL-BENCHMARK-2026-06-30.md` |
+| `model-ranking.template.md` | `model-ranking` | `Voice-Model-Ranking-2026.md` (the measured superseding authority the why-guide de-stale banner points at) |
+| `setup-specs.template.md` | `setup-specs` | `M5-MAX-DGX-INFERENCE-SETUP.md` · `Voice-System-Specs-and-iPhone-Performance.md` |
+| `incident.template.md` | `incident` | `RAG-Reranker-Keep-Warm.md` class (postmortem + rule — `incident-gap` is the cross-product gap record) |
+| `understandings-readme.template.md` | `understandings-readme` | `README.md` (folder front desk; `--bundle` writes a minimal seed only) |
 
 **YSJ mirror registry:** [`../registry/ysj-mirror.registry.json`](../registry/ysj-mirror.registry.json)
 
@@ -28,5 +35,9 @@ Generate filled copies:
 ```bash
 node scripts/scaffold-super-rick-understanding.mjs --help
 ```
+
+Shared blocks (Declaration shield, Last-verified stamps, de-stale banners, glyph legend, LED bars,
+Law callouts, Grade mixin, Boss Moves, Verify blocks, Related footers): [`_chrome.md`](_chrome.md) —
+copy into any doc; not a scaffold kind.
 
 Placeholders use `{{DOUBLE_BRACES}}`. Delete optional sections marked `<!-- optional -->` when not needed.

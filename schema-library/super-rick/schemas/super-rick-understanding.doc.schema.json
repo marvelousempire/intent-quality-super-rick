@@ -12,6 +12,13 @@
       "enum": [
         "declaration-of-intent",
         "why-guide",
+        "audit",
+        "architecture",
+        "benchmark",
+        "model-ranking",
+        "setup-specs",
+        "incident",
+        "understandings-readme",
         "comp",
         "ledger",
         "gap-analysis",
