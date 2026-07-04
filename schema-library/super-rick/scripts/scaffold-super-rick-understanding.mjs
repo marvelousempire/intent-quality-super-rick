@@ -26,6 +26,7 @@ const BUNDLE_KINDS = [
 ];
 
 const KIND_TO_TEMPLATE = {
+  "family-explainer": "family-explainer.template.md",
   'declaration-of-intent': 'declaration-of-intent.template.md',
   'why-guide': 'why-guide.template.md',
   comp: 'comp.template.md',

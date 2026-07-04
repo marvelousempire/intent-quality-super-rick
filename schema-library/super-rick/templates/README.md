@@ -27,6 +27,7 @@ Stationary forms extracted from [`standard-voice-stack/understandings/`](https:/
 | `setup-specs.template.md` | `setup-specs` | `M5-MAX-DGX-INFERENCE-SETUP.md` · `Voice-System-Specs-and-iPhone-Performance.md` |
 | `incident.template.md` | `incident` | `RAG-Reranker-Keep-Warm.md` class (postmortem + rule — `incident-gap` is the cross-product gap record) |
 | `understandings-readme.template.md` | `understandings-readme` | `README.md` (folder front desk; `--bundle` writes a minimal seed only) |
+| `family-explainer.template.md` | family-explainer | `nephew/docs/family-guides/video.md` (the sit-down-with-your-kid walkthrough) |
 
 **YSJ mirror registry:** [`../registry/ysj-mirror.registry.json`](../registry/ysj-mirror.registry.json)
 
