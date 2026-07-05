@@ -1,5 +1,15 @@
 # Changelog — intent-quality-super-rick
 
+## [1.6.1] — 2026-07-05 · Tech Stack + Changelog surfaces standard
+
+### Added
+- `standards/tech-stack-and-changelog-surfaces.md` — every console's "what does this run
+  on" + "what shipped" surfaces standardized on os-pill-and-about-modal + Pockit's
+  changelog accordion, after a comparative survey found them the strongest of every
+  candidate already in the framework. Reference implementation: `nephew` Briefcase
+  console. Full survey + integration record: `optimus-nephew`'s Extraction Chamber
+  `extraction-chamber/tech-stack-and-changelog-patterns/`.
+
 ## [1.6.0] — 2026-07-04 · Super Rick Speed Contract (all five modalities)
 
 - **Super-Rick-Speed-Contract.md** — the speed+efficiency half of THE-SUPER-RICK-WAY: the always-warm
