@@ -13,13 +13,16 @@ gets its own measured Why Guide + Grade-A roadmap:
 
 | Modality | What it covers | Super Rick status | Strongest-today notes |
 |---|---|---|---|
-| **Voice** (STT/TTS) | catch words + speak back | 🟢 audited 2026-06-30 — STT **A** (resident ANE), TTS **C** (Higgs ~8 s) | STT: Parakeet realtime-EOU streaming; TTS: CosyVoice2 ~150 ms / Qwen3-TTS |
-| **Text chat** (LLM + reasoning) | think, tool-call, respond | 🟡 partial — daily-driver **a generation behind** (qwen3-coder:30b unused) | Qwen3-class, skip think-mode, MLX serving |
-| **Retrieval / RAG / cache / index** | how fast it *finds* + *learns* | 🟢 strong — bge-m3 + Qdrant + reranker + Redis STM, **~250 ms E2E measured** | re-measure ingest/learn speed; LVQ8 Qdrant candidate |
-| **Vision** (understand) | image/video understanding | 🔴 unaudited — `qwen3-vl:32b` on box | run the Super Rick gate |
-| **Image / photo** (generate + protect) | create + watermark/protect | 🔴 unaudited — ComfyUI on DGX | SOTA image gen + protection pass |
-| **Sound / audio production** | music/SFX/audio | 🔴 unaudited | SOTA audio-gen pass |
-| **Quantization** (cross-cutting) | speed×quality per chip | 🟢 FP8 (DGX) + GGUF/MLX (Mac) | MLX on M5; FP8-KV on DGX |
+| **Voice** (STT/TTS) | catch words + speak back | 🟢 STT **A** (Parakeet `mw` preferred), TTS **C** (Higgs ~8 s) | STT: Parakeet-realtime-EOU streaming (candidate); TTS: **CosyVoice2 ~150 ms** (candidate — unmeasured) |
+| **Text chat** (LLM + reasoning) | think, tool-call, respond | 🟡 daily-driver **live** (qwen3-coder:30b); light-turn law **shipped** (464s→17s) | MLX serving (candidate); sub-5s warm path still open |
+| **Retrieval / RAG / cache / index** | how fast it *finds* + *learns* | 🟢 retrieve **~250 ms E2E**; coverage **D** | full corpus index; LVQ8 Qdrant (candidate); vision vector |
+| **Vision** (understand) | image/video understanding | 🟡 RF-DETR warm path partial | deep bge-vl escalation; `qwen3-vl:32b` gate pass |
+| **Image / photo** (generate + protect) | create + watermark/protect | 🟢 SD-Turbo + Flux live on DGX | cloud bar: Nano Banana; sovereign: Flux (keep) |
+| **Video** (generate + identity) | drafts + finals + face hold | 🟢 Wan + Hunyuan render-proven; heavy-window law | Avatar adapter; LTX warm preview; cloud bar: Kling 3.0 |
+| **Sound / audio production** | music/SFX/audio | 🟡 ACE-Step live (maker); full pass open | SOTA audio-gen dated-vs-superior pass |
+| **Quantization** (cross-cutting) | speed×quality per chip | 🟢 FP8 (DGX) + GGUF/MLX (Mac) | MLX on M5 for daily driver; FP8-KV on DGX |
+
+**Fused matrix (all rows):** [`SUPER-RICK-STACK-MATRIX.md`](SUPER-RICK-STACK-MATRIX.md) · **Speed contract:** [`Super-Rick-Speed-Contract.md`](Super-Rick-Speed-Contract.md)
 
 🟢 measured/strong · 🟡 partial/known-gap · 🔴 not yet run through the gate. The goal: **every row
 green, every component Grade-A** — Super Rick multimedia AI power, end to end.

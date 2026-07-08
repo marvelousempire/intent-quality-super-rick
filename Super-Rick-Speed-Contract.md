@@ -6,21 +6,20 @@
 > and efficiency, across chat, voice, visual, video, and vision?"* — honestly, and gives every stack
 > the same guarantee expressed in its own terms.
 
-## The honest answer first (measured 2026-07-04)
+## The honest answer first (measured 2026-07-08)
 
 **No — not yet uniform.** Same *principle*, very different *maturity*:
 
 | Modality | Speed/warm doctrine today | Super Rick culture | Verdict |
 |----------|---------------------------|--------------------|---------|
-| **Voice** | mature — always-warm draft, protected tenant, Mac fallback, watchdog, `/health voice_draft` (**206ms live**) | 44 refs | 🟢 the reference implementation |
-| **Chat** | shares the voice pipeline (same warm draft + auto DGX→Mac fallback) | 9 refs | 🟢 covered (same tower-api path) |
-| **Video** | heavy by nature — lane-managed heavy window + fast-draft engine (LTX) | 11 refs | 🟡 has the pattern; not yet an explicit warm-draft contract |
-| **Visual** | **no speed doctrine** (0 warm/fast refs) — the board is WP-served; scroll + snappy cards just fixed | 5 refs | 🔴 the gap this doc opens |
-| **Vision** | **no speed doctrine** (0 warm/fast refs) — camera-input vision still "homeless" (Court Vision lives in ReadyPlay) | 5 refs | 🔴 the gap this doc opens |
+| **Voice** | mature — always-warm draft, protected tenant, Mac fallback, watchdog, `/health voice_draft` (**206ms live**) | reference impl | 🟢 |
+| **Chat** | shares the voice pipeline (same warm draft + auto DGX→Mac fallback) | covered | 🟢 |
+| **Video** | heavy by nature — lane-managed heavy window + fast-draft engine (LTX); warm-draft contract written | explicit contract | 🟡 |
+| **Visual** | board CPT + freshness watchdog + `make heal-optimus-board` (spark VP tunnel) | **86ms** paint · products rendered · fleet **5/5** | 🟢 |
+| **Vision** | RF-DETR ANE detector warm path (`ensure-warm-vision-detector`) | partial — deep path async | 🟡 |
 
-So the truthful statement: **voice + chat already work the same and fast; video has the machinery but
-no written warm contract; visual + vision have neither.** This contract closes that — it does not
-pretend they are already identical.
+The truthful statement: **voice + chat + visual fleet-warm are measured green (5/5); video/vision have
+the machinery and written contract — fleet warm watchdog wires the measured dashboard.**
 
 ## The one pattern (the smart-swap, generalized)
 
@@ -61,13 +60,23 @@ Each modality gets this contract in **its own stack repo** first — `standard-{
 ## The rollout (each is a real, shippable slice)
 
 - **Voice + Chat** — 🟢 done (smart-swap Slices 1–5; IDEA-0005).
+- **Visual** — 🟢 fleet-green 2026-07-08: `make heal-optimus-board`, `ensure-optimus-board-fresh`, **86ms** paint receipt.
 - **Video** — write the explicit warm-draft contract: LTX fast preview shown instantly, Hunyuan escalates in the heavy window; a `/health video_draft` field.
-- **Visual** — the board's warm path: keep the CPT pre-rendered/cached, interaction ≤100ms (scroll + snappy cards shipped); a freshness watchdog.
-- **Vision** — bring camera-input vision home (close the gap analysis item): a small always-warm on-device detector + deep escalation; its own stack contract.
+- **Vision** — bring camera-input vision home: a small always-warm on-device detector + deep escalation; its own stack contract.
+
+## Fleet wiring (Nephew)
+
+```bash
+cd ~/Developer/nephew
+make fleet-warm                    # measured dashboard → ~/.nephew/run/fleet-warm.json
+make install-warm-fleet-watchdog   # every 5 min — all five modalities
+make heal-optimus-board            # Visual 🔴 heal — spark VP tunnel + landing + sync + doors
+```
 
 ## Related
 
 - [`THE-SUPER-RICK-WAY.md`](THE-SUPER-RICK-WAY.md) — the culture this speeds up
+- [`SUPER-RICK-STACK-MATRIX.md`](SUPER-RICK-STACK-MATRIX.md) — strongest-available per component
 - Voice reference: `standard-voice-stack/understandings/Hybrid-Always-Warm-Voice-Tier.md`
 - Idea: optimus-nephew `ideas/idea-ledger.json` → **IDEA-0006**
 - Rules: `RL-ELEVATE-001` · `RL-SMART-001` · `RL-FLEET-OFFLOAD-001` · `RL-DGX-LEDGER-001`

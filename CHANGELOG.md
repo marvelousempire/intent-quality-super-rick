@@ -20,6 +20,22 @@
 
 
 All notable changes to the Super Rick Standards. Semver on the standards (see `README.md`).
+
+## [1.6.1] — Wednesday, July 8, 2026 (evening) · *Receipt sync — Visual fleet-green + light-turn measured*
+
+### Changed
+- **`SUPER-RICK-STACK-MATRIX.md`** — Visual board → **live · A−** (86ms paint, products rendered, `make heal-optimus-board`); chat light-turn → **17.3s** measured (was 464s; slim soul + Mac 7B + no RAG/tools/session).
+- **`Super-Rick-Speed-Contract.md`** — Visual modality **🟢**; fleet **5/5**; documents `make heal-optimus-board`.
+- **`THE-SUPER-RICK-WAY.md`** — chat row: light-turn law shipped (464s→17s).
+
+## [1.6.0] — Wednesday, July 8, 2026 · *Stack matrix + Speed Contract wired across all modalities*
+
+### Added
+- **`SUPER-RICK-STACK-MATRIX.md`** — fused cross-modality table: component · state · grade · strongest-available · action · who. The north-star index for dated-vs-superior; honest state labels (`live` / `candidate — unmeasured` / `cloud-only`).
+- **`Super-Rick-Speed-Contract.md`** — one warmth pattern across voice/chat/visual/video/vision; fleet wiring via `make fleet-warm` + `install-warm-fleet-watchdog`.
+
+### Changed
+- **`THE-SUPER-RICK-WAY.md`** — scope table refreshed to July 8 measured truth; video + sound rows added; links to matrix + Speed Contract.
 (Repo renamed from `standards-super-rick` → `intent-quality-super-rick`; the consumer hub repo
 `voice-stack` was renamed → `standard-voice-stack`. The standard version line is unchanged.)
 
