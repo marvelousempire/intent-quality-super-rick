@@ -34,6 +34,7 @@ This is the **Super Rick intent + quality home** — the canonical versioned sta
 | `THE-SUPER-RICK-WAY.md` | **The philosophy** — psychology, the seven disciplines, the Super Rick gate. Read before building anything that wears the identity. |
 | `standards/orb-design-system.md` | **Canonical** — the complete orb design system (principles, tokens, emotion palette, state machine, DOs/DON'Ts, skinning). Extracted from the live `super-rick-presence` code. |
 | `schema-library/super-rick/` | **Schema Library domain** — canonical Super Rick understanding forms, JSON schemas, YSJ mirror registry, scaffold scripts. Start at [`schema-library/super-rick/README.md`](schema-library/super-rick/README.md). |
+| `schema-library/super-rick/WHAT-IS-A-WHY-GUIDE.md` | **Why Guide handout** — what it is, what it looks like, how to fill it (give this to another AI). |
 | `standards/templates/` | Legacy stationery (superseded by `schema-library/super-rick/templates/` — pointer in `standards/templates/README.md`). |
 | `products/products.json` | The **version registry** — every product that wears Super Rick + the standards version it pins. |
 | `products/README.md` | How a product adopts / bumps its pinned standards version. |

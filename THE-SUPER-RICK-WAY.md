@@ -97,6 +97,7 @@ the quality shows from the first commit.
 
 > **Related:** Super Rick quality definition (acquisition/research bar) · **the stationery**
 > ([`standards/templates/`](standards/templates/README.md) — the fill-in forms for charting any
-> new system this way) · the Why Guide
-> (`standard-voice-stack/understandings/Super-Rick-Why-Guide.md`) · the hardware grade
+> new system this way) · **What is a Why Guide?**
+> ([`schema-library/super-rick/WHAT-IS-A-WHY-GUIDE.md`](schema-library/super-rick/WHAT-IS-A-WHY-GUIDE.md)) ·
+> the Why Guide prototype (`standard-voice-stack/understandings/Super-Rick-Why-Guide.md`) · the hardware grade
 > (`Hardware-Inventory-Grade-Tuning-2026-06-30.md`) · RL-ELEVATE-001 · the weigh-and-measure harness.

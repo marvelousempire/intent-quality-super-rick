@@ -8,6 +8,21 @@ All notable changes to the Super Rick Standards. Semver on the standards (see `R
 > `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
 > `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
+## [1.4.0] — Thursday, July 9, 2026 at 7:02 PM Eastern · *What is a Why Guide handout*
+
+### Added
+- **`schema-library/super-rick/WHAT-IS-A-WHY-GUIDE.md`** — standalone operator/AI handout: definition,
+  document skeleton, six-column table + Corrected & Expanded shape, day-one and post-audit fill
+  procedure, field guide, laws, anti-patterns, done checklist, prototype paths, and a one-liner for
+  prompts. Fills the gap where doctrine + template + voice prototype existed but no single “show
+  another AI what this is” report lived.
+
+### Changed
+- `schema-library/super-rick/doctrine.md` — links handout at top + §1 why-guide.
+- `schema-library/super-rick/README.md` — layout row + agents step 1 = handout.
+- Root `README.md` — layout row for the handout.
+- `standards/templates/README.md` · `why-guide.template.md` · `THE-SUPER-RICK-WAY.md` — pointers to handout.
+
 ## [1.3.0] — Friday, July 3, 2026 at 1:45:00 PM Eastern · *Schema Library super-rick domain*
 
 ### Added

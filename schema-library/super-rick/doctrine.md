@@ -2,6 +2,7 @@
 
 **Prototype repo:** [`standard-voice-stack`](https://git.jailynmarvin.com/marvelousempire/standard-voice-stack) → `understandings/`  
 **Reference WHY guide:** [`Super-Rick-Why-Guide.md`](../../Nephew/Understandings/Voice/understandings/Super-Rick-Why-Guide.md)  
+**What is a Why Guide? (handout):** [`WHAT-IS-A-WHY-GUIDE.md`](WHAT-IS-A-WHY-GUIDE.md) — start here when teaching another AI or operator  
 **Intent law:** [`declaration-of-intent-model.md`](../standards/declaration-of-intent-model.md) (OR-046) · [`intent-quality-super-rick`](https://git.jailynmarvin.com/marvelousempire/intent-quality-super-rick)  
 **Machine schema:** [`super-rick-understanding.doc.schema.json`](schemas/super-rick-understanding.doc.schema.json)
 
@@ -13,6 +14,7 @@ When the board says **Super Rick way**, **intent quality**, or **understandings 
 
 | Layer | Path | Role |
 |-------|------|------|
+| **Why Guide handout** | [`WHAT-IS-A-WHY-GUIDE.md`](WHAT-IS-A-WHY-GUIDE.md) | Standalone: what a Why Guide is, what it looks like, how to fill it |
 | **Doctrine** | This file | What each form is for + how to fill every field |
 | **Stationary templates** | [`templates/`](templates/) | Copy-paste shells with `{{PLACEHOLDER}}` labels |
 | **JSON schema** | [`schemas/super-rick-understanding.doc.schema.json`](schemas/super-rick-understanding.doc.schema.json) | Doc kind + hub metadata for agents |
@@ -110,6 +112,8 @@ Use `TZ=America/New_York date '+%A, %B %-d, %Y at %-I:%M %p Eastern'` — RL-HRT
 ## Form-by-form field guide
 
 ### 1. `why-guide` — Super Rick Why Guide (prototype)
+
+> **Teaching handout (definition + procedure + mini example):** [`WHAT-IS-A-WHY-GUIDE.md`](WHAT-IS-A-WHY-GUIDE.md)
 
 **Filename:** `Super-Rick-{Domain}-Why-Guide.md` or `Super-Rick-Why-Guide.md` when hub is single-domain.
 
