@@ -30,7 +30,9 @@
         "fleet-audit",
         "incident-gap",
         "numbered-understanding",
-        "platform-handbook-mirror"
+        "platform-handbook-mirror",
+        "family-explainer",
+        "decision-record"
       ],
       "description": "Stationary form type — maps to schema-library/super-rick/templates/<kind>.template.md"
     },

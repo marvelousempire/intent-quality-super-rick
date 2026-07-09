@@ -87,6 +87,24 @@ The early Super Rick work *looked* done but wasn't highest-tier, because the rig
 If a thing can't pass this gate, it isn't Super Rick yet — and the gate is run **at the start**, so
 the quality shows from the first commit.
 
+## The Super Rick Decision Protocol (how agents reason — not only how we ship)
+
+The seven disciplines + gate define **culture**. Agents also need a **decision engine** so they
+do not invent market labels (CDN, platform) when an existing placement already fits, claim green
+without receipts, or gold-plate past intent.
+
+**Canonical:** [`Super-Rick-Decision-Protocol.md`](Super-Rick-Decision-Protocol.md) (standards ≥ 1.7.0)
+
+| Layer | Doc |
+|-------|-----|
+| Philosophy | This file (disciplines + ship gate) |
+| **Decisions** (intent → placement → drag → receipt → seed) | Decision Protocol — light vs heavy |
+| Modality warmth | [`Super-Rick-Speed-Contract.md`](Super-Rick-Speed-Contract.md) |
+| Durable decision stationery | `decision-record` template in schema-library |
+
+**Agent one-liner:** intent lock → placement → reject market labels → drag check → receipt or
+grade-down → name gap to A → seed if it mattered.
+
 ## How this session embodies it (the proof, not the promise)
 
 - Measured before flipping STT → kept base.en when the ANE-via-CLI bridge measured *slower*, then
@@ -98,8 +116,8 @@ the quality shows from the first commit.
 - **Documented** all of it (corrected + expanded Why Guide, hardware inventory/grade, minimum
   requirements) so it never has to be re-learned.
 
-> **Related:** Super Rick quality definition (acquisition/research bar) · **the stationery**
-> ([`standards/templates/`](standards/templates/README.md) — the fill-in forms for charting any
-> new system this way) · the Why Guide
-> (`standard-voice-stack/understandings/Super-Rick-Why-Guide.md`) · the hardware grade
+> **Related:** Super Rick quality definition (acquisition/research bar) · **Decision Protocol**
+> ([`Super-Rick-Decision-Protocol.md`](Super-Rick-Decision-Protocol.md) — AI/human reasoning stack) ·
+> **the stationery** ([`schema-library/super-rick/templates/`](schema-library/super-rick/templates/README.md)) ·
+> the Why Guide (`standard-voice-stack/understandings/Super-Rick-Why-Guide.md`) · the hardware grade
 > (`Hardware-Inventory-Grade-Tuning-2026-06-30.md`) · RL-ELEVATE-001 · the weigh-and-measure harness.

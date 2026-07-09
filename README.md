@@ -32,6 +32,7 @@ This is the **Super Rick intent + quality home** — the canonical versioned sta
 |------|---------|
 | `VERSION` | The current Super Rick Standards semver (the number products pin to). |
 | `THE-SUPER-RICK-WAY.md` | **The philosophy** — psychology, the seven disciplines, the Super Rick gate. Read before building anything that wears the identity. |
+| `Super-Rick-Decision-Protocol.md` | **AI/human decision engine** — intent lock → placement → label detector → drag → receipt → gap → seed (light vs heavy). Use on architecture / “should we…?” turns. |
 | `SUPER-RICK-STACK-MATRIX.md` | **Fused north-star** — every modality: component · state · strongest-available · action · who. |
 | `Super-Rick-Speed-Contract.md` | **Warmth pattern** — one smart-swap contract across voice/chat/visual/video/vision. |
 | `standards/orb-design-system.md` | **Canonical** — the complete orb design system (principles, tokens, emotion palette, state machine, DOs/DON'Ts, skinning). Extracted from the live `super-rick-presence` code. |

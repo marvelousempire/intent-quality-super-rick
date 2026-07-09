@@ -28,6 +28,7 @@ Stationary forms extracted from [`standard-voice-stack/understandings/`](https:/
 | `incident.template.md` | `incident` | `RAG-Reranker-Keep-Warm.md` class (postmortem + rule — `incident-gap` is the cross-product gap record) |
 | `understandings-readme.template.md` | `understandings-readme` | `README.md` (folder front desk; `--bundle` writes a minimal seed only) |
 | `family-explainer.template.md` | family-explainer | `nephew/docs/family-guides/video.md` (the sit-down-with-your-kid walkthrough) |
+| `decision-record.template.md` | `decision-record` | Super Rick Decision Protocol durable call — intent · placement · drag · receipt · seed ([`Super-Rick-Decision-Protocol.md`](../../../Super-Rick-Decision-Protocol.md)) · **exemplar:** [`../examples/Super-Rick-Decision-dxp6800-cdn-framing-2026-07-09.md`](../examples/Super-Rick-Decision-dxp6800-cdn-framing-2026-07-09.md) |
 
 **YSJ mirror registry:** [`../registry/ysj-mirror.registry.json`](../registry/ysj-mirror.registry.json)
 

@@ -1,5 +1,24 @@
 # Changelog — intent-quality-super-rick
 
+## [1.7.0] — Wednesday, July 9, 2026 · *Super Rick Decision Protocol — AI reasoning stack*
+
+### Added
+- **`Super-Rick-Decision-Protocol.md`** — operational decision engine for Super Rick Culture:
+  eleven components (intent lock → placement → label detector → drag check → options →
+  SOTA → receipt-or-grade-down → bounded elevate → decision record → gap-naming → seed),
+  light vs heavy paths (reasoning speed contract), ship-gate handoff, agent one-liner.
+  Complements the seven disciplines + Super Rick gate (philosophy) with forced steps so
+  agents stop market-cosplay (e.g. “NAS as CDN”) and improve placement-first decisions.
+- **`schema-library/super-rick/templates/decision-record.template.md`** — stationery for
+  durable decisions; scaffold kind `decision-record`.
+- Schema enum + scaffold `KIND_TO_*` rows for `decision-record` (23rd kind).
+- **`schema-library/super-rick/examples/Super-Rick-Decision-dxp6800-cdn-framing-2026-07-09.md`**
+  — first filed decision-record (DXP6800 “CDN” framing rejected; placement-first cold vault + VPS edge).
+
+### Changed
+- **`THE-SUPER-RICK-WAY.md`** — links Decision Protocol as the AI/human decision layer.
+- **`README.md`** · **schema-library doctrine / templates README** — layout + form table.
+
 ## [1.6.1] — 2026-07-05 · Tech Stack + Changelog surfaces standard
 
 ### Added

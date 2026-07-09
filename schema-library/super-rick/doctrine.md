@@ -54,6 +54,7 @@ When the board says **Super Rick way**, **intent quality**, or **understandings 
 | `incident-gap` | `Ready-Play-DGX-Inference-Gap-2026-06-30.md` | **Incident** with root cause + prevention |
 | `numbered-understanding` | MakeDoors `0001-*.md` | Short **mental model** (status, plain language, example) |
 | `platform-handbook-mirror` | `yousirjuan/docs/setup/30-voice-stack-full-undressing.md` | **Public-safe** platform chapter mirrored from hub undressing |
+| `decision-record` | Decision Protocol stationery | **Durable architecture / “should we?” call** — intent lock · placement · drag · receipt · gap · seed ([`Super-Rick-Decision-Protocol.md`](../../Super-Rick-Decision-Protocol.md)) |
 
 **Minimum bundle for a new Super Rick product** (chat, vision, …):
 

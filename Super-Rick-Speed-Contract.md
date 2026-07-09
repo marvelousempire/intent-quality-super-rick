@@ -76,6 +76,7 @@ make heal-optimus-board            # Visual 🔴 heal — spark VP tunnel + land
 ## Related
 
 - [`THE-SUPER-RICK-WAY.md`](THE-SUPER-RICK-WAY.md) — the culture this speeds up
+- [`Super-Rick-Decision-Protocol.md`](Super-Rick-Decision-Protocol.md) — light vs heavy for **decisions** (same shape as this warmth pattern)
 - [`SUPER-RICK-STACK-MATRIX.md`](SUPER-RICK-STACK-MATRIX.md) — strongest-available per component
 - Voice reference: `standard-voice-stack/understandings/Hybrid-Always-Warm-Voice-Tier.md`
 - Idea: optimus-nephew `ideas/idea-ledger.json` → **IDEA-0006**

@@ -27,6 +27,7 @@ const BUNDLE_KINDS = [
 
 const KIND_TO_TEMPLATE = {
   "family-explainer": "family-explainer.template.md",
+  'decision-record': 'decision-record.template.md',
   'declaration-of-intent': 'declaration-of-intent.template.md',
   'why-guide': 'why-guide.template.md',
   comp: 'comp.template.md',
@@ -52,6 +53,7 @@ const KIND_TO_TEMPLATE = {
 
 const KIND_TO_OUTPUT = {
   'family-explainer': '{{DOMAIN_TITLE}}-Family-Explainer.md',
+  'decision-record': 'Super-Rick-Decision-{{DECISION_SLUG}}-{{DECISION_DATE}}.md',
   'declaration-of-intent': 'Super-Rick-{{DOMAIN_TITLE}}-Declaration-of-Intent.md',
   comp: 'PRIVATE {{DOMAIN_UPPER}}-FIRST AI SYSTEM — COMP.md',
   'why-guide': 'Super-Rick-{{DOMAIN_TITLE}}-Why-Guide.md',
@@ -230,6 +232,9 @@ function buildContext(opts) {
     TAGS: `#${slug} #super-rick`,
     INCIDENT_SLUG: `${domainTitle}-Incident`,
     INCIDENT_TITLE: `${domainTitle} Incident`,
+    DECISION_TITLE: opts.decisionTitle || opts.title || `${domainTitle} Decision`,
+    DECISION_SLUG: opts.decisionSlug || slugify(opts.decisionTitle || opts.title || domainTitle),
+    DECISION_DATE: opts.decisionDate || auditDateSlug(),
     NEPHEW_SHA: 'pending',
     YSJ_SETUP_CHAPTER: ysjSetup,
     YSJ_SETUP_CHAPTER_BASENAME: path.basename(ysjSetup, '.md'),
