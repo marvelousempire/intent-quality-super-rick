@@ -1,6 +1,7 @@
 <!-- STATIONERY · Why Guide (the prototype: standard-voice-stack/understandings/Super-Rick-Why-Guide.md)
 WHAT: the intent layer behind a system — one table answering WHY each technology exists, not just
 what we installed. Pairs with the Ledger (what is live today) and COMP (the north star).
+HANDOUT (what is this / how to fill): schema-library/super-rick/WHAT-IS-A-WHY-GUIDE.md
 FILENAME: {System}-Why-Guide.md — undated, living, refreshed in place.
 WHEN: created alongside COMP, at the start; corrected forever after (never left stale).
 -->

@@ -12,6 +12,7 @@
 
 | Path | Role |
 |------|------|
+| [`WHAT-IS-A-WHY-GUIDE.md`](WHAT-IS-A-WHY-GUIDE.md) | **Start-here handout** — what a Why Guide is, looks like, and how to fill it (for operators + other AIs) |
 | [`doctrine.md`](doctrine.md) | Human law — thirteen forms, four documentation layers, field-fill rules |
 | [`templates/`](templates/) | Stationary `*.template.md` shells (`{{PLACEHOLDER}}` + ✍️ hints) |
 | [`schemas/`](schemas/) | Machine contracts (JSON Schema) |
@@ -24,18 +25,19 @@ Legacy stationery at [`standards/templates/`](../../standards/templates/) is sup
 
 ## Agents — where to create / read
 
-1. **Read doctrine first:** `schema-library/super-rick/doctrine.md`
-2. **Scaffold a new hub bundle:**
+1. **What is a Why Guide?** `schema-library/super-rick/WHAT-IS-A-WHY-GUIDE.md` (handout — show this to another AI)
+2. **Read doctrine:** `schema-library/super-rick/doctrine.md`
+3. **Scaffold a new hub bundle:**
    ```bash
    node schema-library/super-rick/scripts/scaffold-super-rick-understanding.mjs \
      --kind why-guide --domain chat --title "Super Rick Chat" \
      --repo-hub standard-chat-stack --out ~/Developer/standard-chat-stack/understandings
    ```
-3. **Audit YSJ mirror:**
+4. **Audit YSJ mirror:**
    ```bash
    node schema-library/super-rick/scripts/audit-super-rick-ysj-mirror.mjs --domain voice
    ```
-4. **From Nephew** (thin wrappers): `make scaffold-super-rick-understanding` · `make audit-super-rick-ysj-mirror`
+5. **From Nephew** (thin wrappers): `make scaffold-super-rick-understanding` · `make audit-super-rick-ysj-mirror`
 
 **Bright line:** Hub understandings live in `standard-{domain}-stack/understandings/`. This folder holds the **forms** — not product-specific filled docs.
 

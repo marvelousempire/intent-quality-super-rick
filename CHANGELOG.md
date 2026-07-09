@@ -1,5 +1,20 @@
 # Changelog — intent-quality-super-rick
 
+## [1.8.0] — Thursday, July 9, 2026 at 7:30 PM Eastern · *What is a Why Guide handout*
+
+### Added
+- **`schema-library/super-rick/WHAT-IS-A-WHY-GUIDE.md`** — standalone operator/AI handout: definition,
+  document skeleton, six-column table + Corrected & Expanded shape, day-one and post-audit fill
+  procedure, field guide, laws, anti-patterns, done checklist, prototype paths, and a one-liner for
+  prompts. Fills the gap where doctrine + template + voice prototype existed but no single “show
+  another AI what this is” report lived.
+
+### Changed
+- `schema-library/super-rick/doctrine.md` — links handout at top + §1 why-guide.
+- `schema-library/super-rick/README.md` — layout row + agents step 1 = handout.
+- Root `README.md` — layout row for the handout.
+- `standards/templates/README.md` · `why-guide.template.md` · `THE-SUPER-RICK-WAY.md` — pointers to handout.
+
 ## [1.7.0] — Wednesday, July 9, 2026 · *Super Rick Decision Protocol — AI reasoning stack*
 
 ### Added
@@ -62,64 +77,6 @@ All notable changes to the Super Rick Standards. Semver on the standards (see `R
 > `standards-super-rick` → `intent-quality-super-rick`; consumer hub `voice-stack` →
 > `standard-voice-stack`. The design language is unchanged; `VERSION` stays `1.1.0`.
 
-## [1.5.0] — Saturday, July 4, 2026 at 9:17:54 AM Eastern · *Full-stack-undressing forces the low-level specs — quant · chunking · embed schema · memory tiers*
-
-### Added
-- **Four new sections in `full-stack-undressing.template.md`** so a stack undressing can no longer look complete while omitting the numbers that actually define it (operator: *"the indexing and chunking… the quantization… all those specificities need to be noted"*):
-  - **§5 Quantization matrix** — every model × engine × hardware × format, with a "measured not asserted" `weigh-and-measure` note (universal; Mac GGUF · DGX FP8/AWQ · sidecar FP16).
-  - **§6 Chunking & indexing** — chunker strategy, size, overlap, stride, snap, indexer, reindex trigger (retrieval stacks; else explicit `N/A — no corpus`).
-  - **§7 Embedding & retrieval schema** — embedder + dimensionality + precision, reranker, vector store, collections, payload fields, retrieve path.
-  - **§8 Memory tiers** — short-term / durable / retrieval, each with its store + lifecycle (stateful stacks; else explicit `N/A — stateless`).
-- Covenant flags → §9, Platform handbook mirror → §10 (renumbered). No stationery-kind count change — these sharpen an existing kind.
-- **Why:** the template pinned hardware/ports/models but had no field forcing chunk size, quant level, index schema, or memory tier — so `standard-rag-stack` / `standard-memory-stack` could ship prose without the real spec. First consumer: the `standard-rag-stack` FULL-STACK-UNDRESSING (bge-m3 1024-dim FP16 · sliding-window 3200/800 chunker · Qdrant Brain A/B · Redis STM tiers).
-
-## [1.4.0] — Friday, July 3, 2026 at 8:47:16 PM Eastern · *Schema-library stationery complete — 7 new kinds + shared chrome*
-
-### Added
-- **Seven stationery kinds** ported from `standards/templates/` into the canonical
-  `schema-library/super-rick/templates/` domain, closing the gap between the 1.2.0 stationery
-  and the 1.3.0 schema-library domain (every untemplated doc type in the
-  `standard-voice-stack/understandings/` prototype corpus now has a kind):
-  `audit` (living subsystem — distinct from dated `fleet-audit`), `architecture` (component
-  internals — distinct from `architecture-l3`), `benchmark`, `model-ranking`, `setup-specs`,
-  `incident` (postmortem + rule — distinct from `incident-gap`), `understandings-readme`.
-- **`templates/_chrome.md`** — the shared blocks (shield, stamps, de-stale banners, glyph legend,
-  LED bars, Law callouts, Grade mixin, Boss Moves, Verify, Related) — copy-in, not a kind.
-- Schema `kind` enum + scaffold `KIND_TO_TEMPLATE`/`KIND_TO_OUTPUT` rows for all seven
-  (21 kinds total); new `BENCHMARK_TOPIC` context key.
-
-### Fixed
-- `RANKING_DOC` context now year-stamped (`{{DOMAIN_TITLE}}-Model-Ranking-{{YEAR}}.md`) per the
-  filename law — matches the `model-ranking` kind output and the `Voice-Model-Ranking-2026.md`
-  prototype (was date-stamped).
-
-### Not ported (deliberate)
-- `standards/templates/inventory-undressing.template.md` — already covered by the existing
-  `repo-inventory` + `full-stack-undressing` pair.
-
-> **Verify:** `node schema-library/super-rick/scripts/scaffold-super-rick-understanding.mjs --check`
-> (21 kinds) + kind smokes (`model-ranking` → `Chat-Model-Ranking-2026.md`, `benchmark` →
-> `VOICE-BENCHMARK-<date>.md`, `understandings-readme` → `README.md`).
-
-## [1.3.1] — Friday, July 3, 2026 at 8:38:10 PM Eastern · *Declaration of Intent template lands in the schema-library domain*
-
-### Fixed
-- **`schema-library/super-rick/templates/declaration-of-intent.template.md`** — the core chain's
-  step 1 (the 🛡 shield, "required on primary docs" per `doctrine.md`) existed in
-  `standards/templates/` but was missing from the canonical `schema-library/super-rick/templates/`
-  domain shipped in 1.3.0. Added as kind `declaration-of-intent`: schema enum row, scaffold
-  `KIND_TO_TEMPLATE`/`KIND_TO_OUTPUT` wiring, and first slot in the `--bundle` chain (now 7 docs).
-- `schema-library/super-rick/templates/README.md` — broken doctrine link
-  (`../../super-rick-understandings.md` → `../doctrine.md`), broken YSJ registry path
-  (`data/super-rick-ysj-mirror.registry.json` → `../registry/ysj-mirror.registry.json`), and the
-  new `declaration-of-intent` row at the top of the kind table.
-- `schema-library/super-rick/doctrine.md` — two dead `../standards/declaration-of-intent-model.md`
-  links now point at the nephew canonical
-  (`marvelousempire/nephew` → `docs/standards/declaration-of-intent-model.md`); shield section
-  names its template.
-
-> **Verify:** `node schema-library/super-rick/scripts/scaffold-super-rick-understanding.mjs --check`
-> (14 kinds) + single-kind scaffold smoke.
 
 ## [1.3.0] — Friday, July 3, 2026 at 1:45:00 PM Eastern · *Schema Library super-rick domain*
 

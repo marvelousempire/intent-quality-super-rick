@@ -26,7 +26,7 @@ this order. Supporting docs are created when their trigger fires.
 |---|-----|----------|------|
 | 1 | **Declaration of Intent** | [`declaration-of-intent.template.md`](declaration-of-intent.template.md) | First — before anything. Registered as `INT-NNNN` in nephew `data/intent-ledger.json`. Embedded at the top of every core doc. |
 | 2 | **COMP** (north star) | [`comp.template.md`](comp.template.md) | Next — the aspirational master spec everything measures against. |
-| 3 | **Why Guide** | [`why-guide.template.md`](why-guide.template.md) | With COMP — the intent layer: every component + *why* it exists, measured. |
+| 3 | **Why Guide** | [`why-guide.template.md`](why-guide.template.md) | With COMP — the intent layer: every component + *why* it exists, measured. **Handout:** [`WHAT-IS-A-WHY-GUIDE.md`](../../schema-library/super-rick/WHAT-IS-A-WHY-GUIDE.md). |
 | 4 | **GAP Analysis** | [`gap-analysis.template.md`](gap-analysis.template.md) | Once anything is shipped — the honest shipped-vs-COMP crosswalk. Living doc. |
 | 5 | **Bridge Plan** | [`bridge-plan.template.md`](bridge-plan.template.md) | When you commit to closing the gap — phased execution, twinned with a numbered `plans/NNNN` file. |
 | 6 | **Ledger** | [`ledger.template.md`](ledger.template.md) | The single start-here scorecard. Everything else resyncs from it. |
