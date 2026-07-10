@@ -1,5 +1,20 @@
 # Changelog — intent-quality-super-rick
 
+## [1.9.1] — Friday, July 10, 2026 at 3:02:31 AM Eastern · *First family receipts flip three matrix rows to measured*
+
+### Changed
+- **`SUPER-RICK-STACK-MATRIX.md`** — three rows move from claim/candidate to **measured 2026-07-10**
+  (receipts in `~/.nephew/run/`, `INT-20260709-BRIEFCASE-FATHER-CONSOLE`):
+  - **Voice · STT (Parakeet)** and **Voice · STT (WhisperKit)** — MLComputePlan probe: encoders
+    98–100% **ANE-capable**, but the M5 Max planner sends **100% of ops to GPU under `.all`** —
+    state now carries ⚠️ *residency unpinned*; action = pin `cpuAndNeuralEngine` + re-measure.
+    Parakeet grade A → A− until pinned.
+  - **Quant · Mac** — `benchmark-mlx-vs-ollama` measured: MLX +7.9% wall-ms on short turns
+    (voice bench) but −35% prefill at long context and ±40% decode variance under load —
+    **not promoted across the board**; per-workload routing named; idle-machine re-bench gate.
+  - Last-synced stamp updated.
+- **`VERSION`** — 1.9.0 → 1.9.1.
+
 ## [1.9.0] — Thursday, July 9, 2026 at 10:58:00 PM Eastern · *Matrix re-sync: Briefcase audit — two stacks born, M5 silicon law, council reasoning*
 
 ### Changed

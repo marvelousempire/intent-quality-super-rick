@@ -7,12 +7,12 @@
 >
 > **Law:** Document ≠ deploy. Claim ≠ candidate. No receipt → write `candidate — unmeasured`.
 
-**Last synced:** Thursday, July 9, 2026 at 10:58 PM Eastern · pulls from modality Ledgers + Why Guides + live receipts · Briefcase audit pass (`INT-20260709-BRIEFCASE-FATHER-CONSOLE`): two stacks born (sports-tracking · avatar), M5 silicon law (GPU Neural Accelerators via MLX ≠ ANE via Core ML), council reasoning law
+**Last synced:** Friday, July 10, 2026 at 3:02:31 AM Eastern · pulls from modality Ledgers + Why Guides + live receipts · Briefcase audit pass (`INT-20260709-BRIEFCASE-FATHER-CONSOLE`): two stacks born (sports-tracking · avatar), M5 silicon law (GPU Neural Accelerators via MLX ≠ ANE via Core ML), council reasoning law
 
 | Modality | Component | State now | Grade | Strongest-available (2026) | Action to A | Who |
 |----------|-----------|-----------|-------|---------------------------|-------------|-----|
-| **Voice · STT** | Parakeet v3 via `mw` (M5 ANE cascade preferred) | ✅ live | **A** | Parakeet-realtime-EOU-120m streaming (candidate — unmeasured) | weigh streaming EOU vs `mw`; keep WhisperKit fallback | voice |
-| **Voice · STT** | WhisperKit ANE resident | ✅ fallback | A− | tied SOTA for M5 | keep as ANE fallback when `mw` unreachable | voice |
+| **Voice · STT** | Parakeet v3 via `mw` (M5 ANE cascade preferred) | ✅ live · ⚠️ residency unpinned | **A−** | Parakeet-realtime-EOU-120m streaming (candidate — unmeasured) | **measured 2026-07-10:** encoder is 98% ANE-capable but `.all` planner sends 100% to GPU — pin `cpuAndNeuralEngine` in `:8771`/`mw` config + re-measure (receipt `~/.nephew/run/ane-residency-receipt.json`) | voice |
+| **Voice · STT** | WhisperKit ANE resident | ✅ fallback · ⚠️ residency unpinned | A− | tied SOTA for M5 | **measured 2026-07-10:** 100% ANE-capable, 100% GPU under `.all` — same pin action as Parakeet row | voice |
 | **Voice · TTS fast** | Holler / Qwen3-TTS (M5) | ✅ live | B+ | Qwen3-TTS edge (keep) | keep as fast default | voice |
 | **Voice · TTS emotional** | Higgs v3 (DGX) | ⚠️ too slow | **C** | **CosyVoice2-0.5B ~150 ms** (blocked on M5 — Python 3.9, CosyVoice needs ≥3.10 + gradio 5.4); IndexTTS-2, Kokoro 82M | free DGX GPU lane OR CosyVoice on py3.10+ venv; `make benchmark-cosyvoice-m5` | voice + DGX |
 | **Voice · TTS** | Fish S2 Pro | ❌ phantom | F | candidate only | evaluate with receipt or drop claim | voice |
@@ -37,7 +37,7 @@
 | **Visual · board** | Optimus VP board (`/optimus/`) | ✅ live · fleet warm | **A−** | spark VP tunnel when Mac Colima down | **86ms** paint · products rendered · `make heal-optimus-board` · receipt `~/.nephew/run/optimus-board-fresh.json` · fleet **5/5** | visual |
 | **Sound · music** | ACE-Step | ✅ live (chat maker) | B | SOTA audio-gen pass (candidate — unmeasured) | run dated-vs-superior audio pass | chat + sound |
 | **Quant · DGX** | FP8 / AWQ | ✅ live | A | FP8-KV + right-sized ctx | finish vLLM expert levers | DGX |
-| **Quant · Mac** | GGUF / Ollama | ✅ live | B+ | **MLX serving** (20–87% faster, candidate routing) | enable MLX path for daily driver with receipt; M5 GPU Neural Accelerators need macOS 26.2+ | Mac |
+| **Quant · Mac** | GGUF / Ollama | ✅ live | B+ | **MLX serving — measured 2026-07-10, not promoted across the board:** short-turn wall-ms +7.9% MLX (voice bench) BUT long-context prefill −35% vs Ollama (1,980 vs 1,293 tps @ 3,868 tok) + decode ±40% variance under load (`~/.nephew/run/mlx-vs-ollama-receipt.json`) | per-workload routing: short turns → MLX seat, long-context/RAG → Ollama; idle-machine re-bench @ 30B before full promotion; macOS 26.2+ floor | Mac |
 | **Sports · detect + track** | RT-DETR-class on ANE + ByteTrack CPU (genesis stack, born 2026-07-09) | ⬜ charted — candidate — unmeasured | — | RT-DETR v3 class via Core ML/ANE | convert → Xcode ANE-residency report → fps/W receipt | sports |
 | **Sports · replay segment** | SAM 2 video via MPS/MLX, **offline** | ⬜ candidate — unmeasured | — | SAM 2 video (**Core ML = image-only**, July 2026 — live-ANE claim forbidden) | offline minutes-per-clip receipt on M5 Max | sports |
 | **Avatar · splat train/render** | Metal-compute engines (msplat / MetalSplatter / RadianceKit class) — **not Core ML/ANE** | ⬜ candidate — unmeasured | — | ~70 s/scene · ~350 FPS market claims (M4 Max, unmeasured here) | one family head end-to-end on M5 Max + FPS receipt | avatar |
