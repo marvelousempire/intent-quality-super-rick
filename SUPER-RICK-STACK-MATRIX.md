@@ -7,7 +7,7 @@
 >
 > **Law:** Document ≠ deploy. Claim ≠ candidate. No receipt → write `candidate — unmeasured`.
 
-**Last synced:** Wednesday, July 8, 2026 (evening) · pulls from modality Ledgers + Why Guides + live receipts
+**Last synced:** Thursday, July 9, 2026 at 10:58 PM Eastern · pulls from modality Ledgers + Why Guides + live receipts · Briefcase audit pass (`INT-20260709-BRIEFCASE-FATHER-CONSOLE`): two stacks born (sports-tracking · avatar), M5 silicon law (GPU Neural Accelerators via MLX ≠ ANE via Core ML), council reasoning law
 
 | Modality | Component | State now | Grade | Strongest-available (2026) | Action to A | Who |
 |----------|-----------|-----------|-------|---------------------------|-------------|-----|
@@ -37,7 +37,12 @@
 | **Visual · board** | Optimus VP board (`/optimus/`) | ✅ live · fleet warm | **A−** | spark VP tunnel when Mac Colima down | **86ms** paint · products rendered · `make heal-optimus-board` · receipt `~/.nephew/run/optimus-board-fresh.json` · fleet **5/5** | visual |
 | **Sound · music** | ACE-Step | ✅ live (chat maker) | B | SOTA audio-gen pass (candidate — unmeasured) | run dated-vs-superior audio pass | chat + sound |
 | **Quant · DGX** | FP8 / AWQ | ✅ live | A | FP8-KV + right-sized ctx | finish vLLM expert levers | DGX |
-| **Quant · Mac** | GGUF / Ollama | ✅ live | B+ | **MLX serving** (20–87% faster, candidate routing) | enable MLX path for daily driver with receipt | Mac |
+| **Quant · Mac** | GGUF / Ollama | ✅ live | B+ | **MLX serving** (20–87% faster, candidate routing) | enable MLX path for daily driver with receipt; M5 GPU Neural Accelerators need macOS 26.2+ | Mac |
+| **Sports · detect + track** | RT-DETR-class on ANE + ByteTrack CPU (genesis stack, born 2026-07-09) | ⬜ charted — candidate — unmeasured | — | RT-DETR v3 class via Core ML/ANE | convert → Xcode ANE-residency report → fps/W receipt | sports |
+| **Sports · replay segment** | SAM 2 video via MPS/MLX, **offline** | ⬜ candidate — unmeasured | — | SAM 2 video (**Core ML = image-only**, July 2026 — live-ANE claim forbidden) | offline minutes-per-clip receipt on M5 Max | sports |
+| **Avatar · splat train/render** | Metal-compute engines (msplat / MetalSplatter / RadianceKit class) — **not Core ML/ANE** | ⬜ candidate — unmeasured | — | ~70 s/scene · ~350 FPS market claims (M4 Max, unmeasured here) | one family head end-to-end on M5 Max + FPS receipt | avatar |
+| **Avatar · talking broker** | Phase 2 — research-grade ceiling named; interim bridge = HunyuanVideo i2v (video stack, render-proven) | ⬜ ceiling named | — | talking-head splats (research, July 2026) | keep Phase 1/2 honesty line; bridge via i2v | avatar + video |
+| **Council · reasoning** | shared reasoning engine — Qwen3-32B-class (vLLM prime lane today, on-demand) | ⏸ on-demand | B+ | MLX-served reasoning on M5 (candidate — unmeasured); faculty = context/tools/RAG pipe, **not** per-chair big LLMs | reasoning bench (depth + TTFT + tok/s) before promoting a council default | chat + DGX |
 
 ## How to use this matrix
 
@@ -54,3 +59,7 @@
 - Chat · [`standard-chat-stack/understandings/Super-Rick-Chat-Why-Guide.md`](https://git.jailynmarvin.com/marvelousempire/standard-chat-stack/src/branch/main/understandings/Super-Rick-Chat-Why-Guide.md)
 - Video · [`standard-video-stack/understandings/Super-Rick-Video-Why-Guide.md`](https://git.jailynmarvin.com/marvelousempire/standard-video-stack/src/branch/main/understandings/Super-Rick-Video-Why-Guide.md)
 - RAG · [`standard-rag-stack/understandings/Super-Rick-RAG-Why-Guide.md`](https://git.jailynmarvin.com/marvelousempire/standard-rag-stack/src/branch/main/understandings/Super-Rick-RAG-Why-Guide.md)
+- Vision · [`standard-vision-stack/understandings/Super-Rick-Vision-Why-Guide.md`](https://git.jailynmarvin.com/marvelousempire/standard-vision-stack/src/branch/main/understandings/Super-Rick-Vision-Why-Guide.md)
+- Visual · [`standard-visual-stack/understandings/VISUAL-STACK-UNDRESSING.md`](https://git.jailynmarvin.com/marvelousempire/standard-visual-stack/src/branch/main/understandings/VISUAL-STACK-UNDRESSING.md)
+- Sports · [`standard-sports-tracking-stack/understandings/Super-Rick-Sports-Tracking-Why-Guide.md`](https://git.jailynmarvin.com/marvelousempire/standard-sports-tracking-stack/src/branch/main/understandings/Super-Rick-Sports-Tracking-Why-Guide.md)
+- Avatar · [`standard-avatar-stack/understandings/Super-Rick-Avatar-Why-Guide.md`](https://git.jailynmarvin.com/marvelousempire/standard-avatar-stack/src/branch/main/understandings/Super-Rick-Avatar-Why-Guide.md)

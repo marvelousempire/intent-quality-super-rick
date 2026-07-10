@@ -1,5 +1,21 @@
 # Changelog — intent-quality-super-rick
 
+## [1.9.0] — Thursday, July 9, 2026 at 10:58:00 PM Eastern · *Matrix re-sync: Briefcase audit — two stacks born, M5 silicon law, council reasoning*
+
+### Changed
+- **`SUPER-RICK-STACK-MATRIX.md`** — Briefcase-audit pass (`INT-20260709-BRIEFCASE-FATHER-CONSOLE`):
+  - New modality rows: **Sports · detect+track** and **Sports · replay segment**
+    (`standard-sports-tracking-stack`, born tonight — SAM 2 Core ML is **image-only**, live-ANE
+    claim forbidden) and **Avatar · splat train/render** + **Avatar · talking broker**
+    (`standard-avatar-stack`, born tonight — splatting is **Metal compute, not Core ML/ANE**;
+    Phase 2 research ceiling named, i2v bridge via video stack).
+  - New **Council · reasoning** row — one shared reasoning engine (Qwen3-32B-class) + faculty
+    context/tools/RAG pipe, never per-chair big LLMs; MLX-on-M5 serving `candidate — unmeasured`.
+  - **Quant · Mac** row — M5 GPU Neural Accelerators floor named (macOS 26.2+).
+  - Related links: Vision, Visual, Sports, Avatar Why Guides added (RAG link's target file is
+    being created in `standard-rag-stack` this same pass — dangling link closed fleet-side).
+  - Last-synced stamp updated.
+
 ## [1.8.0] — Thursday, July 9, 2026 at 7:30 PM Eastern · *What is a Why Guide handout*
 
 ### Added
