@@ -24,7 +24,7 @@
 | **RAG · embed** | bge-m3 1024-d FP16 `:9200` | ✅ live | **A** | same (canonical) | keep | RAG |
 | **RAG · rerank** | bge-reranker-v2-m3 `:9201` | ✅ live | B+ | M5 edge keep-warm (shipped) | verify keep-warm under GPU pressure | RAG |
 | **RAG · vector** | Qdrant Brain A/B | ⚠️ dual | B | unified collections + LVQ8 candidate | reconcile two brains; re-measure ingest | RAG |
-| **RAG · coverage** | corpus indexed | 🔴 thin | **D** | full repo + plans + apps indexed | expand `NEPHEW_DEFAULT_COLLECTIONS`; on-save reindex (Plan 0229) | RAG |
+| **RAG · coverage** | corpus indexed — **+ Super Rick standards shelf 2026-07-10** | 🟡 improving | **C+** | full repo + plans + apps indexed | **measured 2026-07-10:** `nephew-standards` live (432 pts / 133 files: all 8 standard-* stacks + matrix + optimus, nephew 1.92.242-243); retrieve probe reranked hit **0.979** on avatar silicon law, 1.74 s E2E; in `DEFAULT_COLLECTIONS` + inventory + `standards` reindex lane. Still open to A: sibling app repos + on-save reindex (Plan 0229) | RAG |
 | **RAG · multimodal** | vision vector | ⬜ text-only | C− | bge-vl / Plan 0109 Phase B (candidate) | ship vision-vector path with receipt | RAG |
 | **Video · draft** | Wan 2.2 TI2V-5B | ✅ render-proven | **A−** | LTX-2 vs Wan 2.2 (candidate — unmeasured head-to-head) | receipt-gated compare on GB10 | video |
 | **Video · draft fast** | LTX-Video 2B | ✅ on-volume | B+ | LTX warm-draft contract (Speed Contract) | wire `/health video_draft` + instant preview ≤2s | video |

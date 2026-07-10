@@ -1,5 +1,17 @@
 # Changelog — intent-quality-super-rick
 
+## [1.9.3] — Friday, July 10, 2026 at 11:53:35 AM Eastern · *RAG coverage D → C+: Super Rick standards shelf live in the pipe*
+
+### Changed
+- **`SUPER-RICK-STACK-MATRIX.md`** — RAG·coverage row flips 🔴 thin / D → 🟡 improving / **C+**
+  with the first coverage receipt: `nephew-standards` collection indexed on the DGX
+  (**432 points / 133 files** — all 8 `standard-*` stacks + intent-quality-super-rick +
+  optimus-nephew; nephew 1.92.242 collection + 1.92.243 inventory row/lane), wired into
+  retrieve `DEFAULT_COLLECTIONS`, and verified end-to-end: avatar silicon-law probe returned
+  the Avatar Why Guide **reranked at 0.979** in 1.74 s. Path to A stays named (sibling app
+  repos + Plan 0229 on-save reindex).
+- **`VERSION`** — 1.9.2 → 1.9.3.
+
 ## [1.9.2] — Friday, July 10, 2026 at 11:24:31 AM Eastern · *ANE residency RESOLVED: both STT services verified pinned in source*
 
 ### Changed
