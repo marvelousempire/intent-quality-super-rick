@@ -11,8 +11,8 @@
 
 | Modality | Component | State now | Grade | Strongest-available (2026) | Action to A | Who |
 |----------|-----------|-----------|-------|---------------------------|-------------|-----|
-| **Voice · STT** | Parakeet v3 via `mw` (M5 ANE cascade preferred) | ✅ live · ⚠️ residency unpinned | **A−** | Parakeet-realtime-EOU-120m streaming (candidate — unmeasured) | **measured 2026-07-10:** encoder is 98% ANE-capable but `.all` planner sends 100% to GPU — pin `cpuAndNeuralEngine` in `:8771`/`mw` config + re-measure (receipt `~/.nephew/run/ane-residency-receipt.json`) | voice |
-| **Voice · STT** | WhisperKit ANE resident | ✅ fallback · ⚠️ residency unpinned | A− | tied SOTA for M5 | **measured 2026-07-10:** 100% ANE-capable, 100% GPU under `.all` — same pin action as Parakeet row | voice |
+| **Voice · STT** | Parakeet v3 via `mw` (M5 ANE cascade preferred) | ✅ live · **residency VERIFIED-PINNED** | **A** | Parakeet-realtime-EOU-120m streaming (candidate — unmeasured) | **resolved 2026-07-10:** source-verified — FluidAudio defaults `.cpuAndNeuralEngine` + int8-GPU coercion; live re-measure 99 ms cold / 45–53 ms warm, exact transcript (receipt `~/.nephew/run/ane-residency-receipt.json` → resolution) | voice |
+| **Voice · STT** | WhisperKit ANE resident | ✅ fallback · **residency VERIFIED-PINNED** | A− | tied SOTA for M5 | **resolved 2026-07-10:** WhisperKit defaults pin encoder+decoder to `.cpuAndNeuralEngine` (Models.swift) — pin-don't-assume law stands for NEW Core ML consumers (`.all` → 100% GPU on M5 Max) | voice |
 | **Voice · TTS fast** | Holler / Qwen3-TTS (M5) | ✅ live | B+ | Qwen3-TTS edge (keep) | keep as fast default | voice |
 | **Voice · TTS emotional** | Higgs v3 (DGX) | ⚠️ too slow | **C** | **CosyVoice2-0.5B ~150 ms** (blocked on M5 — Python 3.9, CosyVoice needs ≥3.10 + gradio 5.4); IndexTTS-2, Kokoro 82M | free DGX GPU lane OR CosyVoice on py3.10+ venv; `make benchmark-cosyvoice-m5` | voice + DGX |
 | **Voice · TTS** | Fish S2 Pro | ❌ phantom | F | candidate only | evaluate with receipt or drop claim | voice |

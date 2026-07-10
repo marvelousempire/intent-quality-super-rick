@@ -1,5 +1,17 @@
 # Changelog — intent-quality-super-rick
 
+## [1.9.2] — Friday, July 10, 2026 at 11:24:31 AM Eastern · *ANE residency RESOLVED: both STT services verified pinned in source*
+
+### Changed
+- **`SUPER-RICK-STACK-MATRIX.md`** — the two Voice·STT ⚠️ residency-unpinned rows flip to
+  **residency VERIFIED-PINNED** (Parakeet grade back to A): root-cause pass found FluidAudio's
+  `UnifiedAsrManager` defaults `.cpuAndNeuralEngine` (+ int8-GPU coercion) and WhisperKit
+  defaults pin encoder+decoder — no code change needed. Live re-measure on `:8771`:
+  **99 ms cold / 45–53 ms warm**, exact transcript. The pin-don't-assume law stands for any
+  NEW Core ML consumer (`.all` → 100% GPU on M5 Max). Receipt:
+  `~/.nephew/run/ane-residency-receipt.json` → `resolution_2026_07_10`.
+- **`VERSION`** — 1.9.1 → 1.9.2.
+
 ## [1.9.1] — Friday, July 10, 2026 at 3:02:31 AM Eastern · *First family receipts flip three matrix rows to measured*
 
 ### Changed
