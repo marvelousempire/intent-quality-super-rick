@@ -1,0 +1,10 @@
+{
+  "housekeeper_id": "intent-quality-super-rick",
+  "manifest_repo": "marvelousempire/agent-housekeepers",
+  "manifest_path_in_nephew": "Nephew/Housekeepers",
+  "brief": "briefs/intent-quality-super-rick.md",
+  "runtime_annex": "annexes/intent-quality-super-rick-runtime.md",
+  "tower_context": "GET /api/v1/housekeepers/intent-quality-super-rick/context",
+  "sole_write_authority": "OR-045",
+  "note": "The housekeeper loads bounded canonical IQSR files. Agent Super Rick consumes a pin and never duplicates this culture."
+}

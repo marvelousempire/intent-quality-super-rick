@@ -1,5 +1,17 @@
 # Changelog — intent-quality-super-rick
 
+## [1.9.4] — Saturday, July 11, 2026 at 1:53:47 PM HST · *Canonical housekeeper pointer*
+
+### Added
+
+- **`housekeeper.pointer.json`** — thin pointer to the repo-scoped IQSR housekeeper in the
+  canonical `agent-housekeepers` manifest. The pointer keeps culture here while enabling Nephew
+  to load a bounded, versioned corpus; it does not copy doctrine into an agent repository.
+
+### Changed
+
+- **`VERSION`** — 1.9.3 → 1.9.4.
+
 ## [1.9.3] — Friday, July 10, 2026 at 11:53:35 AM Eastern · *RAG coverage D → C+: Super Rick standards shelf live in the pipe*
 
 ### Changed
