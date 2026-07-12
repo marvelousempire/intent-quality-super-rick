@@ -1,5 +1,27 @@
 # Changelog — intent-quality-super-rick
 
+## [1.10.0] — Saturday, July 11, 2026 at 4:00 PM HST · *Ninth Standard Stack + measured realtime speech truth*
+
+### Changed
+
+- **`SUPER-RICK-STACK-MATRIX.md`** — registers `standard-communication-stack` as the ninth
+  Standard Stack, with live generated TypeScript/Swift contracts kept separate from the still
+  partial/candidate Presence product runtime.
+- Splits the live, residency-pinned Parakeet `mw` final path from the measured Parakeet Realtime
+  EOU streaming path. The latter now records the current **20-run** distribution exactly: first
+  usable partial p95 **523 ms from measured speech onset / 643 ms from first PCM** against the
+  ≤300 ms gate, and semantic EOU p95 **457 ms** against the ≤450 ms gate. **Both remain failed**;
+  neither is promoted by this documentation release.
+- Corrects the RAG coverage wording to preserve receipt scope: the July 10 result covered the
+  then-current eight Standard Stacks. The ninth Communication Stack was published later and
+  remains a named reindex/measurement delta.
+- **`VERSION`** — 1.9.4 → 1.10.0.
+
+### Adoption
+
+- Consumer pins remain explicit. This release does **not** advance Agent Super Rick's operational
+  culture pin.
+
 ## [1.9.4] — Saturday, July 11, 2026 at 1:53:47 PM HST · *Canonical housekeeper pointer*
 
 ### Added
