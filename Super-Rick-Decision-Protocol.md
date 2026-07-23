@@ -30,6 +30,10 @@ Intent = private model/static origin · Placement = cold vault + VPS edge · Lab
 
 ## When it fires
 
+All external signals that imply comparison, adoption, installation, optimization, or “do we have
+this?” first enter [`RL-SR-INTAKE-001`](standards/universal-external-intake.md). The intake law invokes
+this Decision Protocol after resolving claims and identifying the owning Standard Stacks.
+
 | Trigger | Mode |
 |---------|------|
 | Architecture / infra / “should we…?” / placement of workload | **Heavy** (full protocol or light→escalate) |

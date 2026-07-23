@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "assessment_id": "eca-example-0001",
+  "source": { "kind": "github", "locator": "https://github.com/example/tool" },
+  "claims": [{ "text": "Provides local OCR", "evidence_state": "source-claimed" }],
+  "standards": { "classified": ["Vision", "Open Source AI", "Benchmark"], "owners": ["Vision"] },
+  "baseline": { "existing_capabilities": ["Apple Vision OCR"], "hardware_fit": ["Mac M5"], "receipts": [] },
+  "risks": { "sovereignty": "unknown", "privacy": "local candidate", "license": "verify", "resources": "unmeasured", "maintenance": "additional dependency" },
+  "alternatives": ["optimize Apple Vision OCR", "benchmark candidate tool"],
+  "disposition": "benchmark-candidate",
+  "human_benefit": "Potentially improves text recognition accuracy.",
+  "implementation": { "actions": ["benchmark on family corpus"], "approval_classes": [], "rollback": ["remove sandbox checkout"] },
+  "truth_stage": "assessed",
+  "commission": null,
+  "receipts": []
+}

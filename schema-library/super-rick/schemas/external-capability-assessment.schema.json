@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jailynmarvin.com/super-rick/external-capability-assessment.schema.json",
+  "title": "ExternalCapabilityAssessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "assessment_id", "source", "claims", "standards", "baseline", "risks", "alternatives", "disposition", "human_benefit", "implementation", "truth_stage", "receipts"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "assessment_id": { "type": "string", "minLength": 8 },
+    "source": { "type": "object", "required": ["kind", "locator"], "properties": { "kind": { "enum": ["github", "social-media", "article", "pasted-text", "model", "software", "hardware", "other"] }, "locator": { "type": "string", "minLength": 1 } }, "additionalProperties": true },
+    "claims": { "type": "array", "items": { "type": "object", "required": ["text", "evidence_state"], "properties": { "text": { "type": "string" }, "evidence_state": { "enum": ["source-claimed", "verified", "measured", "contested", "unknown"] } }, "additionalProperties": true } },
+    "standards": { "type": "object", "required": ["classified", "owners"], "properties": { "classified": { "type": "array", "items": { "type": "string" }, "minItems": 1 }, "owners": { "type": "array", "items": { "type": "string" }, "minItems": 1 } }, "additionalProperties": true },
+    "baseline": { "type": "object", "required": ["existing_capabilities", "hardware_fit", "receipts"], "additionalProperties": true, "properties": { "existing_capabilities": { "type": "array" }, "hardware_fit": { "type": "array" }, "receipts": { "type": "array" } } },
+    "risks": { "type": "object", "required": ["sovereignty", "privacy", "license", "resources", "maintenance"], "additionalProperties": true, "properties": { "sovereignty": {}, "privacy": {}, "license": {}, "resources": {}, "maintenance": {} } },
+    "alternatives": { "type": "array", "minItems": 2 },
+    "disposition": { "enum": ["already-covered", "optimize-existing", "adapt-pattern", "install-integrate", "benchmark-candidate", "reject"] },
+    "human_benefit": { "type": "string", "minLength": 1 },
+    "implementation": { "type": "object", "required": ["actions", "approval_classes", "rollback"], "additionalProperties": true, "properties": { "actions": { "type": "array" }, "approval_classes": { "type": "array" }, "rollback": { "type": "array" } } },
+    "truth_stage": { "enum": ["assessed", "selected", "implemented", "physically-proven", "commissioned", "live"] },
+    "commission": { "type": ["object", "null"] },
+    "receipts": { "type": "array" },
+    "assessed_at": { "type": "string", "format": "date-time" }
+  }
+}

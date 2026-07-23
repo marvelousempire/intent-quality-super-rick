@@ -1,5 +1,7 @@
 # intent-quality-super-rick
 
+Universal external intake: [`RL-SR-INTAKE-001`](standards/universal-external-intake.md) requires every outside repository, media signal, model, product, software, or hardware proposal to be compared against Nephew's standards and existing family truth, then delivered safely or rejected with evidence.
+
 **The canonical Super Rick Standards** — the voice-first cinematic design language every
 Family Office product that wears the Super Rick identity must follow, **version-tracked** so each
 product pins an exact standards release.

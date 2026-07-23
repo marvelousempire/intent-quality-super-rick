@@ -1,5 +1,17 @@
 # Changelog — intent-quality-super-rick
 
+## [1.11.0] — Wednesday, July 22, 2026 at 9:10 PM Eastern · *Universal external intake must end in working delivery*
+
+### Added
+
+- Add `RL-SR-INTAKE-001`: every repository, media link, article, pasted idea, model, software, or hardware signal is cross-examined against the full standards fleet and current Family Office truth.
+- Add the `ExternalCapabilityAssessment` schema with six dispositions, hybrid-autonomy boundaries, explicit truth stages, and receipt-gated commissioning.
+- Require optimization of existing sovereign capability before duplication, safe autonomous delivery after selection, permanent hard approvals for consequential effects, and automatic contraction after drift or failed proof.
+
+### Verification
+
+- `node schema-library/super-rick/scripts/verify-external-intake.mjs`
+
 ## [1.10.0] — Saturday, July 11, 2026 at 4:00 PM HST · *Ninth Standard Stack + measured realtime speech truth*
 
 ### Changed
